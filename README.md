@@ -4,7 +4,7 @@ Valoci climatologici per la regione Puglia.
 
 ### Annali
 
-Sul sito web del Centro Funzionale della regione Puglia sono disponibili gli Annali. Per il periodo 1997 - 2019 si tratta di documenti in formatp pdf (ovvero non si tratta di scansioni, ma di vere e proprie tabelle numeriche).
+Sul [sito web del Centro Funzionale della regione Puglia](https://protezionecivile.puglia.it/centro-funzionale-decentrato/rete-di-monitoraggio/annali-e-dati-idrologici-elaborati/) sono disponibili gli Annali. Per il periodo 1997 - 2019 si tratta di documenti in formatp pdf (ovvero non si tratta di scansioni, ma di vere e proprie tabelle numeriche).
 
 Attenzione: il programma di estrazione dei dati ha dei problemi negli anni 1999, 2007, 2008, 2011 e 2013. Quindi al momento sono stati estratti senza problemi tutti i restanti anni per il periodo 1997 - 2019.
 
