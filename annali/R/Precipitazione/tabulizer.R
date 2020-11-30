@@ -5,18 +5,18 @@ library("pdftools")
 source("help.R")
 
 #"../annale2018.pdf"->nomeFile pag=103
-"../annale2018.pdf"->nomeFile
+"../annale2012.pdf"->nomeFile
 str_extract(nomeFile,"[0-9]{4}")->anno
 
 ULTIMA_PAGINA<-FALSE
 
-purrr::walk(125:143,.f=function(numeroPagina){
+purrr::walk(72:108,.f=function(numeroPagina){
 
   print(numeroPagina)
   
   
   extract_tables(file=nomeFile,page = numeroPagina,method = "stream",output="matrix")[[1]]->tabella
-  as.tibble(tabella)->tabella
+  as_tibble(tabella)->tabella
   
   eliminaColonneVuote(x=tabella)->tabella
   trovaRigheIntestazioni(x=tabella)->righeIntestazioni
@@ -76,13 +76,15 @@ purrr::walk(125:143,.f=function(numeroPagina){
   purrr::walk(daScrivere,.f=function(tt){
   
     try({
+      tt[[1]]$yy<-anno
       str_replace_all(tt[[1]]$stazione[1]," ","_")->nomeStazione
-      write_delim(tt[[1]],glue::glue("Puglia_precipitazione_{anno}_{nomeStazione}.csv"),delim=";",col_names = TRUE)
+      write_delim(tt[[1]] %>% dplyr::select(stazione,yy,dd,everything()),glue::glue("Puglia_precipitazione_{anno}_{nomeStazione}.csv"),delim=";",col_names = TRUE)
     })
     
     try({
+      tt[[2]]$yy<-anno
       str_replace_all(tt[[2]]$stazione[1]," ","_")->nomeStazione
-      write_delim(tt[[2]],glue::glue("Puglia_precipitazione_{anno}_{nomeStazione}.csv"),delim=";",col_names = TRUE)
+      write_delim(tt[[2]] %>% dplyr::select(stazione,yy,dd,everything()),glue::glue("Puglia_precipitazione_{anno}_{nomeStazione}.csv"),delim=";",col_names = TRUE)
     })
     
   })
