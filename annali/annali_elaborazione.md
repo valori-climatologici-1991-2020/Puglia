@@ -6,11 +6,13 @@ Dal 1997 gli Annali della Puglia sono vere tabelle in formato pdf (non scanneriz
 
 La temperatura e' stata estratta prima convertendo i file pdf in formato testo (mediante ps2txt e l'uso di espressioni regolari) e poi rielaborando i testi mediante R.
 Poiche' parte dei dati della temperatura erano gi disponibili in formato csv (dati inviati dalla regione Puglia su richiesta via fax), sono stati estratti dai pdf solo
-gli anni non disponibili (**dal XX ???? ad oggi**).
+gli anni non disponibili (ovvero gli anni dal 2013 al 2019 ma senza il 2014 che non e' statopossibile elaborare).
 
-Alcune tabelle hanno delle irregolarita' nella formattazione che ne rendono difficile l'importazione completamente in modalita' automatica. Parte degli anni/pdf 
-con le tabelle problematiche erano gi disponibili in formato csv. Degli anni non disponibili, solo il 2013 ha richiesto un intervento manuale correggere gli errori 
-di importazione. **L'uso del pacchetto R `tabulizer` avrebbe eliminato questi problemi? Sicuramente si**.
+Alcune tabelle pdf hanno delle irregolarita' nella formattazione che ne rendono difficile l'importazione in modalita' automatica. Fortunatamente la maggior parte degli anni/pdf 
+con le tabelle problematiche erano gi disponibili in formato csv (dati inviati dal Centro Funzionale). Degli anni non disponibili, solo il 2013 ha richiesto un intervento manuale per correggere gli errori 
+di importazione (revisione del 2013 da parte di Francesca e Emanuala). **L'uso del pacchetto R `tabulizer` e uno script simile a quello implementato per la precipitazione avrebbe eliminato questi problemi? Sicuramente si**.
+
+Il 2014 e' un pdf particolare: non si riesce a convertire in testo mediante ps2txt. **Provare a leggerlo mediante `tabulizer`**
 
 ## Precipitazione
 
