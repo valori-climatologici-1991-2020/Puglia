@@ -1,0 +1,2 @@
+I dati 2013 estratti dagli Annali avevano problemi nelle tabelle di temperatura e sono stati rivisti da Francesca e Emanuela. Il file del 2013 corretto e' il file 
+"puglia2013 rev 26112020.xlsx".
