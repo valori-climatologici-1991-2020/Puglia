@@ -1,1 +1,1 @@
-I dati del 1999, 2007, 2008, 2011 mancano in quanto i file pdf avevano stranezze soprattutto nelle righe dei giorni 30 e 31 del mese.
+I dati del 1999, 2007, 2008, 2011 mancano in quanto i file pdf degli Annali avevano stranezze soprattutto nelle righe dei giorni 30 e 31 del mese (stranezze che si manifestavano quando si sono convertiti i pdf in file csv).
