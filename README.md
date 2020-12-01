@@ -15,6 +15,8 @@ Sul [sito web del Centro Funzionale della regione Puglia](https://protezionecivi
 Alcuni file pdf presentano tabelle con strane formattazioni che creano problemi al codice R scritto per leggere le tabelle di temperatura (anni con tabelle problematiche per la temperatura: 1999, 2007, 2008, 2011 e 2013). Sono invece stati estratti senza problemi gli anni restanti per il periodo 1997 - 2019. 
 Gli anni 1999, 2007, 2008 e 2011 fanno parte del set di dati inviati dal Centro Funzionale (vedi sotto), quindi gli errori di formattazione delle tabelle nei file pdf possono essere ignorati. L'anno 2013 invece (non inviato dal Centro Funzionale) ha richiesto una revisione e correzione manuale delle tabelle prodotte mediante R.
 
+Il 2014 e' un pdf particolare che non si e' riuscito a elaborare quindi i dati del 2014 sono tutti NA.
+
 #### Precipitazione
 
 Per la lettura delle tabelle di precipitazione si e' usato un approccio diverso da quello usato per le serie di temperatura (basato sul pacchetto R `tabulizer`).
