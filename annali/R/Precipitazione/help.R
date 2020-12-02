@@ -209,7 +209,7 @@ aggiustaTabelle<-function(x,replaceHeader=FALSE){
     if(replaceHeader){
       firstRow<-2
       unlist(str_split(str_trim(as.character(mytibble[1,1]),side ="both"),pattern=" "))->intestazioneColonna
-      round(runif(n=length(intestazioneColonna)),2)->acaso
+      round(runif(n=length(intestazioneColonna)),3)->acaso
       paste0(intestazioneColonna,acaso)->nuoviNomi
     }else{
       firstRow<-1
@@ -250,6 +250,7 @@ aggiustaTabelle<-function(x,replaceHeader=FALSE){
     mytibble %>%
       slice(firstRow:nrow(mytibble)) %>%
       separate(col=temp,into=nuoviNomi,sep=" +")->nuovoTibble
+
 
     nuovoTibble
     
@@ -415,7 +416,7 @@ correggiRiga<-function(x,riga){
   as.character(penultimaRiga)->penultimaRiga
 
   which(nchar(penultimaRiga)==0)->qualiVuote
-  penultimaRiga[qualiVuote]<-NA
+  if(length(qualiVuote)) penultimaRiga[qualiVuote]<-NA
   which(is.na(penultimaRiga))->qualiNA
   
   if(length(qualiNA)==1){
@@ -455,6 +456,13 @@ creaTabelle<-function(x,anno){
   
   aggiustaTabelle(x=x,replaceHeader = TRUE)->y
 
+  
+  #Eliminiamo eventuali colonne vuote che non corrispondono ad alcun mese dell'anno: in alcuni casi
+  #succede che a questo punto il data.frame contiene colonne vuote in eccesso. Queste colonne vuote vanno eliminate
+  y %>%
+    dplyr::select(matches("^[dGFMALSOND]"))->y
+  
+  
   #Aquesto punto il data.frame y se contiene delle colonne vuote (tuttevuote) vanno riempite con ">>"
   #prima di utilizzare coalesceColonne
   riempiColonneVuote(x=y)->y

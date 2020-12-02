@@ -5,12 +5,12 @@ library("pdftools")
 source("help.R")
 
 #"../annale2018.pdf"->nomeFile pag=103
-"../annale2013.pdf"->nomeFile
+"../annale2019.pdf"->nomeFile
 str_extract(nomeFile,"[0-9]{4}")->anno
 #98:135
 ULTIMA_PAGINA<-FALSE
 
-purrr::walk(107:135,.f=function(numeroPagina){
+purrr::walk(103:143,.f=function(numeroPagina){
 
   print(numeroPagina)
   
@@ -104,12 +104,30 @@ purrr::walk(107:135,.f=function(numeroPagina){
       tt[[1]]$yy<-anno
       str_replace_all(tt[[1]]$stazione[1]," ","_")->nomeStazione
       write_delim(tt[[1]] %>% dplyr::select(stazione,yy,dd,everything()),glue::glue("Puglia_precipitazione_{anno}_{nomeStazione}.csv"),delim=";",col_names = TRUE)
+      
+      tt[[1]] %>%
+        dplyr::select(-stazione,-yy,-dd) %>%
+        apply(.,2,sum,na.rm=TRUE)->somma
+      
+      sink("logSommeMensili.txt",append=TRUE)
+      cat(paste0(paste0(nomeStazione,";",anno),";",paste0(somma,collapse = ";")),"\n")
+      sink()
+      
     })
     
     try({
       tt[[2]]$yy<-anno
       str_replace_all(tt[[2]]$stazione[1]," ","_")->nomeStazione
       write_delim(tt[[2]] %>% dplyr::select(stazione,yy,dd,everything()),glue::glue("Puglia_precipitazione_{anno}_{nomeStazione}.csv"),delim=";",col_names = TRUE)
+      
+      tt[[2]] %>%
+        dplyr::select(-stazione,-yy,-dd) %>%
+        apply(.,2,sum,na.rm=TRUE)->somma
+      
+      sink("logSommeMensili.txt",append=TRUE)
+      cat(paste0(paste0(nomeStazione,";",anno),";",paste0(somma,collapse = ";")),"\n")
+      sink()
+      
     })
     
   })
