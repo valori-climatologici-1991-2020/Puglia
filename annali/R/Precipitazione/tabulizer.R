@@ -5,12 +5,12 @@ library("pdftools")
 source("help.R")
 
 #"../annale2018.pdf"->nomeFile pag=103
-"../annale2012.pdf"->nomeFile
+"../annale2013.pdf"->nomeFile
 str_extract(nomeFile,"[0-9]{4}")->anno
-
+#98:135
 ULTIMA_PAGINA<-FALSE
 
-purrr::walk(72:108,.f=function(numeroPagina){
+purrr::walk(107:135,.f=function(numeroPagina){
 
   print(numeroPagina)
   
@@ -26,34 +26,62 @@ purrr::walk(72:108,.f=function(numeroPagina){
   
   tabella[1:(righeIntestazioni[1]-1),]->intestazione
   nrow(intestazione)->nHeader
-  intestazione[1,]->nomiUpper
-  tabella[righeIntestazioni[1]:nrow(tabella),]->tabella
   
+  #nomi delle stazioni nelle due tabelle in alto
+  cercaNomiStazioni(x=intestazione)->nomiUpper
+
+  if(any(nchar(nomiUpper)<=3)){
+    sink("logNomi.txt",append=TRUE)
+    print(nomiUpper)
+    sink()
+  }
+  
+  tabella[righeIntestazioni[1]:nrow(tabella),]->tabella
+  #per il corretto funzionamento della funzione coalesceColonne e' necessario che la colonna che corrisponde ai giorni
+  #abbia sempre un'intestazione e non sia vuota. La funzione che segue cerca la colonnadei giorni e le assegna un nome ("d")
   trovaRigheTotali(x=tabella)->righeTotali
   if(!length(righeTotali)) stop("righeTotali vuoto")
   
   as.tibble(tabella[1:(righeTotali[1]-1),1:ncol(tabella)])->tabella1.upper
+  
+  #il cui solo scopo e' quello di assicurare che la prima cella della colonnadei giorni non sia "" che ingannerebbe
+  #la funzione coalesceColonne
+  
+  trovaColonnaGiorni(x=tabella1.upper)->tabella1.upper
+  
   creaTabelle(x=tabella1.upper,anno=anno)->tabelle.upper
   
-  as.character(nomiUpper)[nchar(nomiUpper)!=0]->nomiUpper
+  #Cerco le stringhe che hanno piu' di 1 carattere (per escludere una cella "" o una cella "G": "G" corrisponde alla G di Giorno
+  #che compare in verticale nei pdf tra le tabelle di precipitazione)
+  as.character(nomiUpper)[nchar(nomiUpper)>1]->nomiUpper
   str_remove(str_remove(nomiUpper,"^G "),"i$")->nomiUpper
-
-    
+  nomiUpper[nchar(nomiUpper)>0]->nomiUpper
+  
   tabelle.upper[[1]]$stazione<-nomiUpper[1]
   
   try({
     tabelle.upper[[2]]$stazione<-nomiUpper[2]
   })
   
-  print("fattoooo<-----")
-  
+
   if(!ULTIMA_PAGINA){
-    tabella[righeIntestazioni[2]-nHeader-3,]->nomiLower
-    as.tibble(tabella[(righeIntestazioni[2]-nHeader):(righeTotali[2]-1),1:ncol(tabella)])->tabella1.lower
-    creaTabelle(x=tabella1.lower,anno=anno)->tabelle.lower
     
-    as.character(nomiLower)[nchar(nomiLower)!=0]->nomiLower
+    cercaNomiStazioni(x=intestazione)->nomiUpper
+    #Qui fissiamo a 36 l'inizio della tabella lower, ma potrebbe non funzionare?
+    tabella[36:(righeIntestazioni[2]-3),]->intestazioneLower
+    cercaNomiStazioni(x=intestazioneLower)->nomiLower
+    if(any(nchar(nomiLower)==2)) browser()
+    
+    as.tibble(tabella[(righeIntestazioni[2]-nHeader):(righeTotali[2]-1),1:ncol(tabella)])->tabella1.lower
+    trovaColonnaGiorni(x=tabella1.lower)->tabella1.lower
+   
+    creaTabelle(x=tabella1.lower,anno=anno)->tabelle.lower
+  
+    as.character(nomiLower)[nchar(nomiLower)>1]->nomiLower
     str_remove(str_remove(nomiLower,"^G "),"i$")->nomiLower
+    
+    nomiLower[nchar(nomiLower)>0]->nomiLower
+    
     tabelle.lower[[1]]$stazione<-nomiLower[1]
     
     if(length(tabelle.lower)==2){
@@ -70,9 +98,6 @@ purrr::walk(72:108,.f=function(numeroPagina){
   }
 
 
-  
-  
-  
   purrr::walk(daScrivere,.f=function(tt){
   
     try({

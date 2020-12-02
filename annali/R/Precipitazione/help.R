@@ -1,18 +1,44 @@
-eliminaColonneVuote<-function(x){    
+trovaColonneVuote<-function(x){    
   
   purrr::map(1:ncol(x),.f=function(colonna){
     
     x[[colonna]]->.y
     
-    if(all(!str_count(.y))) return()
+    if(all(is.na(.y))) return() #colonna tutti NA, non posso fare str_count
+    if(any(str_count(.y))) return()
     
-    str_remove(.y,"^\\. ")
+    colonna
     
-  }) %>% purrr::compact() %>% reduce(.f=bind_cols)->out
+  }) %>% purrr::compact()->listaColonne
   
-  out
+  unlist(listaColonne)
+  
+}#trovaColonneVuote
+
+eliminaColonneVuote<-function(x){    
+  
+  trovaColonneVuote(x)->colonne
+  
+  if(length(colonne)) x[,-colonne]->x
+  
+  x
   
 }#eliminaColonneVuote
+
+riempiColonneVuote<-function(x){
+  
+  trovaColonneVuote(x)->colonne
+  
+  if(!length(colonne)) return(x)
+ 
+  for(cc in 1:length(colonne)){
+    x[[colonne[cc]]]<-">>"
+  }
+  
+  x
+  
+}#fine riempiColonneVuote
+
 
 trovaRigheIntestazioni<-function(x){
 
@@ -30,6 +56,134 @@ trovaRigheIntestazioni<-function(x){
   purrr::compact(righeIntestazioni) %>% unlist->righeIntestazioni
 
 }#trovaRigheIntestazioni
+
+
+pulisciColonnaConGiorni<-function(z){
+  
+  rep(FALSE,31)->vettore
+  
+  for(ii in 1:31){
+    str_detect(z[ii+1],pattern=paste0("^",ii," "))->ris
+    if(ris) vettore[ii]<-TRUE
+  }#fine ciclo for
+  
+  
+  if(all(vettore)){
+    #str_remove servenel caso in cui la colonna che ingloba i giorni riporti una delle lettere della parola Giorno
+    #Ad esempio "o G F": la colonna contiene i mesi di Gennaio e Febbraio e la colonna dei giorni. Se non elimino "o"
+    #successivamente separate trovera' tre nomi per le nuove colonne e quindi assegnera' Gennaio a una colonna connome "o"
+    # e Febbraio a una colonna Gennaio!
+    nuovaColonna<-c(str_remove(z[1],"[giorno]"),rep("",31))
+    for(ii in 1:31){
+      str_remove(z[ii+1],pattern=paste0("^",ii," "))->nuovaColonna[ii+1]
+    }#fine ciclo for
+    
+    return(nuovaColonna)
+    
+  }#fine if su all(vettore)
+  
+  NULL
+  
+}#fine pulisciColonnaGiorni
+
+
+trovaColonnaGiorni<-function(x){
+  
+  #cerco la colonna dei giorni come la colonna che nella riga 1 e' uguale a "" o uguale a stringa minuscola di una lettera
+  #(di solito la lettera "o")
+  which(!((1:ncol(x)) %in% grep("[GFMALSOND]",x[1,],ignore.case = FALSE)))->colonna
+  
+  #Se non trvo la colonna dei giorni in questo modo significa che la colonna dei giorni sta inglobata o nella colonna di
+  #dicembre della tabella a sinistra o nella colonna di gennaio della tabella a destra
+  
+  #La funzione pulisciColonnaConGiorni verifica se la colonna di dicembre o gennaio contiene le stringhe da 1 a 31, 
+  #toglie queste stringhe dei giorni e restituisce la colonna priva dei giorni. Se pulisciColonnaConGiorni invece restituisce
+  #NULL vuol dire che la colonna non contiene i giorni
+  
+  tryCatch({
+    stopifnot(sum(as.numeric(x[2:32,colonna][[1]]))==sum(1:31))
+    x[1,colonna]<-"d"
+    x
+  },error=function(e){
+    NULL
+  })->out
+  
+  if(is.null(out)){
+    
+    grep("D",x[1,])->colonneDicembre
+    length(colonneDicembre)->quantiDicembre
+    
+    colonneDicembre[1]->primoDicembre
+    ncol(x)->numeroColonne
+    x[,c(1:primoDicembre)]->tabella1
+    
+    pulisciColonnaConGiorni(tabella1[[primoDicembre]])->nuovaColonna
+    if(!is.null(nuovaColonna)){
+      tabella1[[primoDicembre]]<-nuovaColonna
+    }
+    
+    if(quantiDicembre==2){
+      colonneDicembre[2]->secondoDicembre
+      x[,c((primoDicembre+1):secondoDicembre)]->tabella2
+      pulisciColonnaConGiorni(tabella2[[1]])->nuovaColonna
+      if(!is.null(nuovaColonna)){
+        tabella2[[1]]<-nuovaColonna
+      }
+      
+
+    }#if quantiDicembre==2  
+    
+    #tabella1 e tabella2 sono le tabelle a sinistra e a destra. In una delle due tabelle ho tolto le stringhe dei giorni
+    #Creo una nuova tabella in cui affianco tabella1 + giorni +tabella2
+    bind_cols(tabella1,c("d",1:31))->tabella1
+    
+    tryCatch({
+      
+      bind_cols(tabella1,tabella2)
+      
+    },error=function(e){
+      
+      tabella1
+      
+    })
+    
+    
+  }else{
+    x
+  }
+  
+  
+}#trovaColonneGiorni
+
+
+cercaNomiStazioni<-function(x){
+  
+  nrow(x)->numeroRighe
+  
+  #I nomi delle stazioni generalmente sono posizionati nella riga 1 dell'intestazione, ma non si pu dare per scontato
+  #quindi bisogna fare un ciclo sul numero di righe tra 1:nHeader, contare il numero delle colonne. Se abbiamo due o tre
+  #colonne allora abbiamo trovato la riga con i nomi delle stazioni. Se invece il numero delle colonne ==0 oppure
+  #abbiamo una sola colonna (in tal caso eliminaColonneVuote restituisce un vettore di un unico char e non un tibble) il
+  #comando ncol genera un errore.
+  for(hh in 1:numeroRighe){
+    x[hh,]->nomiStazioni
+    eliminaColonneVuote(x=nomiStazioni)->nomiStazioni
+    
+    tryCatch({
+      ncol(nomiStazioni)
+    },error=function(e){
+      NULL
+    })->numeroColonne
+    
+    if(!is.null(numeroColonne) && (numeroColonne>1)) break;
+    if(numeroColonne==1){
+      if(nomiStazioni[[1]]!="" & nomiStazioni[[1]]!="G" & nomiStazioni[[1]]!="i") break;
+    }
+  }
+  
+  nomiStazioni[nchar(nomiStazioni)>1]
+  
+}#fine cercaNomiStazioni
 
 trovaRigheTotali<-function(x){
 
@@ -54,7 +208,7 @@ aggiustaTabelle<-function(x,replaceHeader=FALSE){
     
     if(replaceHeader){
       firstRow<-2
-      unlist(str_split(as.character(mytibble[1,1]),pattern=" "))->intestazioneColonna
+      unlist(str_split(str_trim(as.character(mytibble[1,1]),side ="both"),pattern=" "))->intestazioneColonna
       round(runif(n=length(intestazioneColonna)),2)->acaso
       paste0(intestazioneColonna,acaso)->nuoviNomi
     }else{
@@ -62,14 +216,45 @@ aggiustaTabelle<-function(x,replaceHeader=FALSE){
       c("X1","X2")->nuoviNomi
     }  
     
+    length(unlist(str_split(str_trim(mytibble[[1]][1],side="both"),pattern=" ")))->numeroDiMesiNellaColonna
+   
+    if(numeroDiMesiNellaColonna>1){
+        while(1>0){
+          
+          purrr::map(str_split(str_trim(mytibble[[1]][2:32]),pattern=" "),.f=length) %>% unlist->numeroDiDatiNelleCelleDellaColonna
+          
+          #3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 2
+          #il primo 3 si riferisce ad esempio ai mesi di G L A
+          #poi ho una sfilza di 2 e poi una sfilza di tre...
+          #questo succede quando ho mesi di dati mancanti. In questo caso i dati mancanti non vengono indicati come ">>"
+          #ma come colonne vuote....a pagina 99 dell'Annale 2013 la stazione di Ripalta presenta i mesei da Gennaio a Giugno
+          #senza dati (colonne vuote) ma poi Giugno comincia a met mese. tabulizer accorpa i mesi di Giugno Luglio e Agosto
+          #I giorni in cui Giugno non ha dati avra' solo i due valori per luglio e agosto. I giorni in cui Giugno ha dati
+          #la colonna avr tre valori. In Questa situazione dove ho due valori, prima di dividere la colonna mediante "separate"
+          #devo fare inmodo di avere tre dati in tutti le celle altrimenti separate (doveho due valori) li assegna (erroneamente)
+          #a giugno e luglio (lasciando NA ad agosto) quando invece e' Giugno che ha una parte di giorni NA e luglio e Agosto sono pieni.
+          which((numeroDiMesiNellaColonna-numeroDiDatiNelleCelleDellaColonna)==1)->qualiCelle  
+          
+          if(length(qualiCelle) && any(qualiCelle<29) ){
+            
+            str_c(">> ",mytibble$temp[qualiCelle+1])->mytibble$temp[qualiCelle+1]
+          }else{
+            break
+          }
+          
+        }#fine while
+      
+    }#fine if
+    
 
     mytibble %>%
       slice(firstRow:nrow(mytibble)) %>%
       separate(col=temp,into=nuoviNomi,sep=" +")->nuovoTibble
-    
+
     nuovoTibble
     
   })->out2
+  
   
   out2
   
@@ -86,8 +271,29 @@ coalesceColonne<-function(x){
     which(nchar(x[1,])==0)->colonnE
     
     if(!length(colonnE)){break;}
+    
     if(length(colonnE)>=1) {colonna<-colonnE[1]}
-  
+    
+    #Una delle celle adiacenti a x[1,colonna] e' vuota?
+    #Si: allora faccio coalesceColonne
+    #No:si tratta di una colonna che non era tutta vuota (quindi non e' stata tutta riempita con >>)
+    #ma di una colonna con una serie di valori vuoti e che poi comincia ad avere valori validi.
+    #In questo caso non devo fare coalesceColonne
+    tryCatch({
+      nchar(x[1,colonna-1])
+    },error=function(e){
+      NULL
+    })->NCOL1
+    
+    tryCatch({
+      nchar(x[1,colonna+1])
+    },error=function(e){
+      NULL
+    })->NCOL2
+    
+    #Ho una colonna adiacente vuota? NO: allora non devo andare avanti
+    if(!any(c(NCOL1,NCOL2)==0)) break;
+    
       if(colonna==1){
         
         x[,c(colonna,colonna+1)]->xx
@@ -95,6 +301,7 @@ coalesceColonne<-function(x){
         
       }else if(colonna>1 & colonna <ncol(x)){ 
     
+        
         x[,c(colonna-1,colonna,colonna+1)]->xx
       
       }else if(colonna==ncol(x)){
@@ -146,6 +353,7 @@ coalesceColonne<-function(x){
 
 
 dividiTabelle<-function(x){
+  
   
   if(!sum(as.numeric(x[[13]]))==sum(1:31)) stop("errore")
   
@@ -244,8 +452,13 @@ numeriche<-function(x){
 
 creaTabelle<-function(x,anno){
   
+  
   aggiustaTabelle(x=x,replaceHeader = TRUE)->y
 
+  #Aquesto punto il data.frame y se contiene delle colonne vuote (tuttevuote) vanno riempite con ">>"
+  #prima di utilizzare coalesceColonne
+  riempiColonneVuote(x=y)->y
+  
   coalesceColonne(y)->y
 
   dividiTabelle(y)->listaTabelle
