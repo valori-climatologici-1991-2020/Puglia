@@ -10,9 +10,9 @@ gli anni non disponibili (ovvero gli anni dal 2013 al 2019 ma senza il 2014 che 
 
 Alcune tabelle pdf hanno delle irregolarita' nella formattazione che ne rendono difficile l'importazione in modalita' automatica. Fortunatamente la maggior parte degli anni/pdf 
 con le tabelle problematiche erano gi disponibili in formato csv (dati inviati dal Centro Funzionale). Degli anni non disponibili, solo il 2013 ha richiesto un intervento manuale per correggere gli errori 
-di importazione (revisione del 2013 da parte di Francesca e Emanuala). **L'uso del pacchetto R `tabulizer` e uno script simile a quello implementato per la precipitazione avrebbe eliminato questi problemi? Sicuramente si**.
+di importazione (revisione del 2013 da parte di Francesca e Emanuala). **L'uso del pacchetto R `tabulizer` e uno script simile a quello implementato per la precipitazione avrebbe eliminato questi problemi? **.
 
-Il 2014 e' un pdf particolare: non si riesce a convertire in testo mediante ps2txt. **Provare a leggerlo mediante `tabulizer`**
+Il 2014 e' un pdf particolare: non si riesce a convertire in testo mediante ps2txt. **Provato a leggerlo anche con `tabulizer` ma senza risultato**
 
 ## Precipitazione
 
@@ -20,8 +20,7 @@ Per la precipitazione la lettura delle tabelle e' avvenuta direttamente dai pdf 
 Il pacchetto `tabulizer` consente la lettura delle tabelle che pero' poi richiedono molte rielaborazioni per arrivare alle tabelle finali. Il vantaggio di `tabulizer`
 e' che non risente della cattiva formattazione dei pdf (formattazione che crea a volte righe sflasate quando si convertono i pdf in testo mediante ps2txt).
 
-Attenzione: `tabulizer` usa il pacchetto `rJava` quindi la Java Virtual Machine. A volte il codice per l'estrazione dei dati di precipitazione (`tabulizer.R + help.R`)
-da degli errori che pero' svaniscono facendo rigirare il programma.
+Attenzione: `tabulizer` usa il pacchetto `rJava` quindi la Java Virtual Machine. 
 
 La strategia per utilizzare `tabulizer.R` e':
 - fissare la pagina di inizio e di fine delle tabelle di precipitazione nel pdf
