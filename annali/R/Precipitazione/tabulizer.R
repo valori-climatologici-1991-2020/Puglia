@@ -7,6 +7,8 @@ source("help.R")
 "../annale2013.pdf"->nomeFile
 str_extract(nomeFile,"[0-9]{4}")->anno
 
+print(glue::glue("Elaborazione Annali, anno {anno}"))
+
 ULTIMA_PAGINA<-FALSE
 ##50:150
 
@@ -101,6 +103,16 @@ purrr::walk(50:150,.f=function(numeroPagina){
     
     
   }
+  
+  
+  mysum<-function(x){ 
+  
+    which(is.na(x))->qualiNA
+    if(length(qualiNA)>10) return(NA)
+    
+    sum(x,na.rm=TRUE)
+    
+  }
 
 
   purrr::walk(daScrivere,.f=function(tt){
@@ -112,7 +124,7 @@ purrr::walk(50:150,.f=function(numeroPagina){
       
       tt[[1]] %>%
         dplyr::select(-stazione,-yy,-dd) %>%
-        apply(.,2,sum,na.rm=TRUE)->somma
+        apply(.,2,mysum)->somma
       
       sink(glue::glue("logSommeMensili{anno}.txt"),append=TRUE)
       cat(paste0(paste0(nomeStazione,";",anno),";",paste0(somma,collapse = ";")),"\n")
@@ -127,7 +139,7 @@ purrr::walk(50:150,.f=function(numeroPagina){
       
       tt[[2]] %>%
         dplyr::select(-stazione,-yy,-dd) %>%
-        apply(.,2,sum,na.rm=TRUE)->somma
+        apply(.,2,mysum)->somma
       
       sink(glue::glue("logSommeMensili{anno}.txt"),append=TRUE)
       cat(paste0(paste0(nomeStazione,";",anno),";",paste0(somma,collapse = ";")),"\n")

@@ -21,6 +21,8 @@ trovaColonneVuote<-function(x){
   
 }#trovaColonneVuote
 
+
+
 eliminaColonneVuote<-function(x){    
   
   trovaColonneVuote(x)->colonne
@@ -44,6 +46,8 @@ riempiColonneVuote<-function(x){
   x
   
 }#fine riempiColonneVuote
+
+
 
 
 trovaRigheIntestazioni<-function(x){
@@ -222,12 +226,12 @@ aggiustaTabelle<-function(x,replaceHeader=FALSE){
       c("X1","X2")->nuoviNomi
     }  
     
-    length(unlist(str_split(str_trim(mytibble[[1]][1],side="both"),pattern=" ")))->numeroDiMesiNellaColonna
+    length(unlist(str_split(str_trim(mytibble[[1]][1],side="both"),pattern=" +")))->numeroDiMesiNellaColonna
    
     if(numeroDiMesiNellaColonna>1){
         while(1>0){
           
-          purrr::map(str_split(str_trim(mytibble[[1]][2:32]),pattern=" "),.f=length) %>% unlist->numeroDiDatiNelleCelleDellaColonna
+          purrr::map(str_split(str_trim(mytibble[[1]][2:32]),pattern=" +"),.f=length) %>% unlist->numeroDiDatiNelleCelleDellaColonna
           
           #3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 2
           #il primo 3 si riferisce ad esempio ai mesi di G L A
@@ -241,8 +245,8 @@ aggiustaTabelle<-function(x,replaceHeader=FALSE){
           #a giugno e luglio (lasciando NA ad agosto) quando invece e' Giugno che ha una parte di giorni NA e luglio e Agosto sono pieni.
           which((numeroDiMesiNellaColonna-numeroDiDatiNelleCelleDellaColonna)==1)->qualiCelle  
           
-          if(length(qualiCelle) && any(qualiCelle<29) ){
-            
+          if(length(qualiCelle) && any(qualiCelle<29) ){ 
+
             str_c(">> ",mytibble$temp[qualiCelle+1])->mytibble$temp[qualiCelle+1]
           }else{
             break
@@ -252,7 +256,7 @@ aggiustaTabelle<-function(x,replaceHeader=FALSE){
       
     }#fine if
     
-
+    
     mytibble %>%
       slice(firstRow:nrow(mytibble)) %>%
       separate(col=temp,into=nuoviNomi,sep=" +")->nuovoTibble
@@ -262,7 +266,7 @@ aggiustaTabelle<-function(x,replaceHeader=FALSE){
     
   })->out2
   
-  
+
   out2
   
 }#fine aggiustaTabelle
@@ -272,6 +276,8 @@ coalesceColonne<-function(x){
   
   STOP<-FALSE
   x->X
+  
+  
   
   while(1>0){
     
@@ -286,20 +292,31 @@ coalesceColonne<-function(x){
     #No:si tratta di una colonna che non era tutta vuota (quindi non e' stata tutta riempita con >>)
     #ma di una colonna con una serie di valori vuoti e che poi comincia ad avere valori validi.
     #In questo caso non devo fare coalesceColonne
+    
+    #Celle vuote sono anche le celle che ho riempito con ">>" quindi per verificare quali sono vuote devo
+    #convertire ">>" in "" e poi contare nchar 
+    
     tryCatch({
-      nchar(x[1,colonna-1])
+      x[1,colonna-1]->cella
+      str_replace(cella,">>","")->cella
+      nchar(cella)
     },error=function(e){
       NULL
     })->NCOL1
     
     tryCatch({
-      nchar(x[1,colonna+1])
+      x[1,colonna+1]->cella
+      str_replace(cella,">>","")->cella
+      nchar(cella)
     },error=function(e){
       NULL
     })->NCOL2
     
-    #Ho una colonna adiacente vuota? NO: allora non devo andare avanti
-    if(!any(c(NCOL1,NCOL2)==0)) break;
+   
+    #Ho una colonna adiacente con la cella vuota? NO: allora non devo andare avanti
+  #  if(!any(c(NCOL1,NCOL2)==0)) break; <-ORIGINALE 3 dicembre
+    if((NCOL1==0)||(NCOL2==0)) break;
+    
     
       if(colonna==1){
         
@@ -327,6 +344,7 @@ coalesceColonne<-function(x){
       
       tibble(xxx=xxx)->xxx
       
+      
       aggiustaTabelle(xxx,replaceHeader = FALSE)->xxx
       
       
@@ -352,7 +370,7 @@ coalesceColonne<-function(x){
   
   }#fine for
   
-
+  
   x
   
 }#fine coalesceColonne
@@ -361,8 +379,10 @@ coalesceColonne<-function(x){
 
 dividiTabelle<-function(x){
   
+  
   #cerco nuovamente la colonna dei giorni e quella dei mesi (potrebbe succedere di arrivare a questo punto e avere due colonne dei giorni)
-  which((1:ncol(x)) %in% grep("[GFMALSONDd]",names(x),ignore.case = FALSE))->colonna 
+  #Inserisco anche la X perche con coalesceColonne potrei aver introdotto colonne con nome X  
+  which((1:ncol(x)) %in% grep("[XGFMALSONDd]",names(x),ignore.case = FALSE))->colonna 
   x[,colonna]->x 
   
   if(!sum(as.numeric(x[[13]]))==sum(1:31)) stop("errore")
@@ -463,22 +483,73 @@ numeriche<-function(x){
 
 creaTabelle<-function(x,anno){
   
-  
   aggiustaTabelle(x=x,replaceHeader = TRUE)->y
 
-  
   #Eliminiamo eventuali colonne vuote che non corrispondono ad alcun mese dell'anno: in alcuni casi
   #succede che a questo punto il data.frame contiene colonne vuote in eccesso. Queste colonne vuote vanno eliminate
-  y %>%
-    dplyr::select(matches("^[dGFMALSOND]"))->y
+  which(!grepl("^[dGFMALSOND]",names(y)))->colonneForseDaEliminare
   
+  if(length(colonneForseDaEliminare)){ 
+    
+    y[,colonneForseDaEliminare]->z  
+    #le colonne che ho trovato sono vuote o servono per coalesceColonne?    
+    trovaColonneVuote(z)->qualiColonneVuote
+    
+    if(!is.null(qualiColonneVuote)){ 
+    
+      colonneForseDaEliminare[qualiColonneVuote]->TOGLI 
+      y[,-c(TOGLI)]->y   
+      
+    }else{ 
+      
+      if(length(colonneForseDaEliminare)==1){ 
+        
+      #per non far fallore sum prima di tutto devo convertire la colonna in numerica
+      #I valori non numerici vengono convertiti in NA. Se gli NA sono pochi allora
+      #potrebbe essere che questa colonna in piu' sia un duplicato della colonna dei giorni e va tolta
+      #Se invece la maggior parte dei valori sono NA, allora non e' una colonna numerica e non procedo con
+      #sum()=sum(1:20)
+        
+        as.numeric(y[[colonneForseDaEliminare]][1:20])->vettoreNumerico
+        which(is.na(vettoreNumerico))->quantiNA
+        if(length(quantiNA)<=2){
+        
+            #questa colonna in piu' e' un'altra colonna dei giorni? Testiamola sulle prime 20 celle  
+            if(sum(vettoreNumerico,na.rm=TRUE)==sum(1:20)){ 
+      
+              y[,-c(colonneForseDaEliminare)]->y
+              
+              
+            }else{ 
+              
+              warning("Ho una colonna in piu' che non dovrei avere e non so che fare")  
+              browser()          
+              
+            } 
+          
+        }#length(quantiNA)<=2 
+        
+        
+      }else{ 
+      
+        warning("Ho colonne in piu' che non dovrei avere e non so che fare")  
+        browser()
+      }
+      
+      
+    }
+    
+  }#fine if 
+  
+
   
   #Aquesto punto il data.frame y se contiene delle colonne vuote (tuttevuote) vanno riempite con ">>"
   #prima di utilizzare coalesceColonne
+  
   riempiColonneVuote(x=y)->y
   
   coalesceColonne(y)->y
-
+  
   dividiTabelle(y)->listaTabelle
   
   purrr::compact(listaTabelle)->listaTabelle
