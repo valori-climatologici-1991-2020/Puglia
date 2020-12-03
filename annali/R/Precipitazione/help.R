@@ -3,13 +3,19 @@ trovaColonneVuote<-function(x){
   purrr::map(1:ncol(x),.f=function(colonna){
     
     x[[colonna]]->.y
-    
+  
+    #Può capitare che una colonna sia vuota ma una o alcune celle abbiano un "." simbolo che compare ogni tanto negli Annali
+    #affiancando dati di precipitazione...elimino i punti isolati per evitare che falliscano i controlli che seguono  
+    str_remove(.y,"^\\.$")->.y
+    #if(!all(.z==.y)) browser()
+      
     if(all(is.na(.y))) return() #colonna tutti NA, non posso fare str_count
-    if(any(str_count(.y))) return()
+    if(any(str_count(str_trim(.y,side="both"))!=0)) return()
     
     colonna
     
   }) %>% purrr::compact()->listaColonne
+  
   
   unlist(listaColonne)
   
@@ -89,10 +95,9 @@ pulisciColonnaConGiorni<-function(z){
 
 trovaColonnaGiorni<-function(x){
   
-  #cerco la colonna dei giorni come la colonna che nella riga 1 e' uguale a "" o uguale a stringa minuscola di una lettera
-  #(di solito la lettera "o")
-  which(!((1:ncol(x)) %in% grep("[GFMALSOND]",x[1,],ignore.case = FALSE)))->colonna
-  
+  eliminaColonneVuote(x)->x
+
+
   #Se non trvo la colonna dei giorni in questo modo significa che la colonna dei giorni sta inglobata o nella colonna di
   #dicembre della tabella a sinistra o nella colonna di gennaio della tabella a destra
   
@@ -145,13 +150,14 @@ trovaColonnaGiorni<-function(x){
       
       tabella1
       
-    })
+    })->x
     
     
   }else{
     x
   }
   
+  x
   
 }#trovaColonneGiorni
 
@@ -209,7 +215,7 @@ aggiustaTabelle<-function(x,replaceHeader=FALSE){
     if(replaceHeader){
       firstRow<-2
       unlist(str_split(str_trim(as.character(mytibble[1,1]),side ="both"),pattern=" "))->intestazioneColonna
-      round(runif(n=length(intestazioneColonna)),3)->acaso
+      round(runif(n=length(intestazioneColonna)),5)->acaso
       paste0(intestazioneColonna,acaso)->nuoviNomi
     }else{
       firstRow<-1
@@ -355,6 +361,9 @@ coalesceColonne<-function(x){
 
 dividiTabelle<-function(x){
   
+  #cerco nuovamente la colonna dei giorni e quella dei mesi (potrebbe succedere di arrivare a questo punto e avere due colonne dei giorni)
+  which((1:ncol(x)) %in% grep("[GFMALSONDd]",names(x),ignore.case = FALSE))->colonna 
+  x[,colonna]->x 
   
   if(!sum(as.numeric(x[[13]]))==sum(1:31)) stop("errore")
   
@@ -440,6 +449,7 @@ numeriche<-function(x){
   
   purrr::map_dfc(x,.f=function(colonna){
     
+    str_replace(colonna,"--","0.0")->colonna
     str_replace(colonna,"-","0.0")->colonna
     str_replace(colonna,",",".")->colonna
     str_replace(colonna,">>","NA")->colonna    

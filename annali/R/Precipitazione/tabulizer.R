@@ -4,34 +4,39 @@ library("tidyverse")
 library("pdftools")
 source("help.R")
 
-#"../annale2018.pdf"->nomeFile pag=103
-"../annale2019.pdf"->nomeFile
+"../annale2013.pdf"->nomeFile
 str_extract(nomeFile,"[0-9]{4}")->anno
-#98:135
+
 ULTIMA_PAGINA<-FALSE
+##50:150
 
-purrr::walk(103:143,.f=function(numeroPagina){
+purrr::walk(50:150,.f=function(numeroPagina){
 
-  print(numeroPagina)
+  print(glue::glue("Elaboro pagina: {numeroPagina}"))
   
+  tryCatch({ 
+    extract_tables(file=nomeFile,page = numeroPagina,method = "stream",output="matrix")[[1]]->tabella
+    as_tibble(tabella)
+  },error=function(e){ 
+    NULL
+  })->tabella
   
-  extract_tables(file=nomeFile,page = numeroPagina,method = "stream",output="matrix")[[1]]->tabella
-  as_tibble(tabella)->tabella
+  if(is.null(tabella)) {warning(glue::glue("Lettura pagina {numeroPagina} fallita!")); return()}
   
   eliminaColonneVuote(x=tabella)->tabella
   trovaRigheIntestazioni(x=tabella)->righeIntestazioni
-  if(!length(righeIntestazioni)) stop("righeIntestazioni vuoto")
+  if(!length(righeIntestazioni)){warning("righeIntestazioni vuoto");return()}
   if(ULTIMA_PAGINA) stop("Ho trovato precedentemente una sola riga intestazione ma non era l'ultima pagina!")
   if(length(righeIntestazioni)==1) ULTIMA_PAGINA<<-TRUE
   
   tabella[1:(righeIntestazioni[1]-1),]->intestazione
   nrow(intestazione)->nHeader
-  
+
   #nomi delle stazioni nelle due tabelle in alto
   cercaNomiStazioni(x=intestazione)->nomiUpper
 
   if(any(nchar(nomiUpper)<=3)){
-    sink("logNomi.txt",append=TRUE)
+    sink(glue::glue("logNomi{anno}.txt"),append=TRUE)
     print(nomiUpper)
     sink()
   }
@@ -50,7 +55,7 @@ purrr::walk(103:143,.f=function(numeroPagina){
   trovaColonnaGiorni(x=tabella1.upper)->tabella1.upper
   
   creaTabelle(x=tabella1.upper,anno=anno)->tabelle.upper
-  
+
   #Cerco le stringhe che hanno piu' di 1 carattere (per escludere una cella "" o una cella "G": "G" corrisponde alla G di Giorno
   #che compare in verticale nei pdf tra le tabelle di precipitazione)
   as.character(nomiUpper)[nchar(nomiUpper)>1]->nomiUpper
@@ -109,7 +114,7 @@ purrr::walk(103:143,.f=function(numeroPagina){
         dplyr::select(-stazione,-yy,-dd) %>%
         apply(.,2,sum,na.rm=TRUE)->somma
       
-      sink("logSommeMensili.txt",append=TRUE)
+      sink(glue::glue("logSommeMensili{anno}.txt"),append=TRUE)
       cat(paste0(paste0(nomeStazione,";",anno),";",paste0(somma,collapse = ";")),"\n")
       sink()
       
@@ -124,7 +129,7 @@ purrr::walk(103:143,.f=function(numeroPagina){
         dplyr::select(-stazione,-yy,-dd) %>%
         apply(.,2,sum,na.rm=TRUE)->somma
       
-      sink("logSommeMensili.txt",append=TRUE)
+      sink(glue::glue("logSommeMensili{anno}.txt"),append=TRUE)
       cat(paste0(paste0(nomeStazione,";",anno),";",paste0(somma,collapse = ";")),"\n")
       sink()
       
@@ -132,7 +137,7 @@ purrr::walk(103:143,.f=function(numeroPagina){
     
   })
 
-  Sys.sleep(5)
-  print("finito")
+  
+  print(glue::glue("finito pagina {numeroPagina}"))
 
 })
