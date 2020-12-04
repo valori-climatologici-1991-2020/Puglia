@@ -4,7 +4,7 @@ library("tidyverse")
 library("pdftools")
 source("help.R")
 
-"../annale2013.pdf"->nomeFile
+"../annale2019.pdf"->nomeFile
 str_extract(nomeFile,"[0-9]{4}")->anno
 
 print(glue::glue("Elaborazione Annali, anno {anno}"))
@@ -12,7 +12,7 @@ print(glue::glue("Elaborazione Annali, anno {anno}"))
 ULTIMA_PAGINA<-FALSE
 ##50:150
 
-purrr::walk(50:150,.f=function(numeroPagina){
+purrr::walk(97:150,.f=function(numeroPagina){
 
   print(glue::glue("Elaboro pagina: {numeroPagina}"))
   

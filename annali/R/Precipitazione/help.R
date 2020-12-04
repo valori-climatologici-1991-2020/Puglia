@@ -9,7 +9,7 @@ trovaColonneVuote<-function(x){
     str_remove(.y,"^\\.$")->.y
     #if(!all(.z==.y)) browser()
       
-    if(all(is.na(.y))) return() #colonna tutti NA, non posso fare str_count
+    if(all(is.na(.y))) return(colonna) #colonna tutti NA, non posso fare str_count
     if(any(str_count(str_trim(.y,side="both"))!=0)) return()
     
     colonna
@@ -47,6 +47,42 @@ riempiColonneVuote<-function(x){
   
 }#fine riempiColonneVuote
 
+riempiCelleVuote<-function(x,anno){
+  
+  RIGHE<-c(30,31)
+  
+  if(!lubridate::leap_year(as.integer(anno))) RIGHE<-c(29,RIGHE)
+  
+  purrr::map_dfc(1:ncol(x),.f=function(colonna){
+    
+    
+    
+    x[[colonna]]->.y
+    
+    which(is.na(.y))->qualiCelleVuote
+    if(!length(qualiCelleVuote)) return(.y)
+    
+    #i mesi sono incrementati di 1 perche la prima colonna corrisponde a dd
+    if(colonna==3)  base::setdiff(qualiCelleVuote,RIGHE)->qualiCelleVuote
+    if((colonna==5)||(colonna==7) || (colonna==10)|| (colonna==12))  base::setdiff(qualiCelleVuote,RIGHE)->qualiCelleVuote    
+
+    if(!length(qualiCelleVuote)) return(.y)
+    
+
+    .y[qualiCelleVuote]<-">>"
+    
+    .y
+    
+  })->out 
+  
+  names(out)<-names(x)
+  
+
+  out
+  
+
+  
+}#fine riempiCelleVuote
 
 
 
@@ -245,7 +281,7 @@ aggiustaTabelle<-function(x,replaceHeader=FALSE){
           #a giugno e luglio (lasciando NA ad agosto) quando invece e' Giugno che ha una parte di giorni NA e luglio e Agosto sono pieni.
           which((numeroDiMesiNellaColonna-numeroDiDatiNelleCelleDellaColonna)==1)->qualiCelle  
           
-          if(length(qualiCelle) && any(qualiCelle<29) ){ 
+          if(length(qualiCelle)  && any(qualiCelle<29)){ 
 
             str_c(">> ",mytibble$temp[qualiCelle+1])->mytibble$temp[qualiCelle+1]
           }else{
@@ -411,12 +447,16 @@ dividiTabelle<-function(x){
 correggi31<-function(x,year=anno){
   
   x[31,2:13]->ultimaRiga
-  as.character(ultimaRiga)->ultimaRiga
   
-  which(nchar(ultimaRiga)==0)->qualiVuote
+  
+  which((nchar(ultimaRiga)==0)| (is.na(ultimaRiga))| (ultimaRiga=="NA"))->qualiVuote
+  #if(!length(qualiVuote)) which((penultimaRiga==">>"))->qualiVuote
   ultimaRiga[qualiVuote]<-NA
-  which(is.na(ultimaRiga))->qualiNA
-  if(length(qualiNA)==5){
+  
+  #Sulla riga 31 5 valori NA. Se in un alro mese non ho dati deve avere ">>"
+  if(length(qualiVuote)>5) warning("Sulla riga31 mi aspetto 5 celle NA")
+
+  if(length(qualiVuote)==5){
     ultimaRiga[!is.na(ultimaRiga)]->valori
     valori[1]->ultimaRiga[1]
     ultimaRiga[2]<-NA
@@ -442,17 +482,21 @@ correggiRiga<-function(x,riga){
   
   x[riga,2:13]->penultimaRiga
 
-  as.character(penultimaRiga)->penultimaRiga
+  #as.character(penultimaRiga)->penultimaRiga
 
-  which(nchar(penultimaRiga)==0)->qualiVuote
+  which((nchar(penultimaRiga)==0)| is.na(penultimaRiga)| (penultimaRiga=="NA"))->qualiVuote
+  #if(!length(qualiVuote)) which((penultimaRiga==">>"))->qualiVuote
   if(length(qualiVuote)) penultimaRiga[qualiVuote]<-NA
-  which(is.na(penultimaRiga))->qualiNA
   
-  if(length(qualiNA)==1){
+  
+  #Sulla riga 29/30 solo febbraio assume valore NA. Se in un alro mese non ho dati deve avere ">>"
+  if(length(qualiVuote)>1) warning("Sulla riga 29 o 30 mi aspetto solo una cella NA")
+  
+  if(length(qualiVuote)==1){
     penultimaRiga[!is.na(penultimaRiga)]->valori
     valori[1]->penultimaRiga[1]
     penultimaRiga[2]<-NA
-    penultimaRiga[3:12]<-valori[2:11]
+    penultimaRiga[3:12]<-as.list(valori[2:11])
   }
   
 
@@ -533,7 +577,7 @@ creaTabelle<-function(x,anno){
       }else{ 
       
         warning("Ho colonne in piu' che non dovrei avere e non so che fare")  
-        browser()
+        #browser()
       }
       
       
@@ -555,6 +599,12 @@ creaTabelle<-function(x,anno){
   purrr::compact(listaTabelle)->listaTabelle
   
   if(!length(listaTabelle)) return()
+
+  map(listaTabelle,.f=riempiColonneVuote)->listaTabelle
+ 
+  #per controllare le righe del 29/30/31 devo sostituire eventuali NA con ">>". Li devo sostituire solo nelle colonne
+  #e nelle celle dove di default non ho NA (quindi il 29/30/31 febbraio nonli devo riempire con ">>", lo stesso il 31 aprile etc)
+  #map(listaTabelle,.f=riempiCelleVuote,anno=anno)->listaTabelle
 
   if(!lubridate::leap_year(as.integer(anno))) map(listaTabelle,.f=correggiRiga,riga=29)->listaTabelle
   map(listaTabelle,.f=correggiRiga,riga=30)->listaTabelle
