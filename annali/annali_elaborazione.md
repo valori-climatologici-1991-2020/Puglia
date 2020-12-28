@@ -25,7 +25,7 @@ Attenzione: `tabulizer` usa il pacchetto `rJava` quindi la Java Virtual Machine.
 La strategia per utilizzare `tabulizer.R` e':
 - fissare la pagina di inizio e di fine delle tabelle di precipitazione nel pdf
 - far girare il programma sulla sequenza dei numeri di pagina
-- se il programma si intterompe a pagina X, riavviare il programma facendolo ripartire da pagina X-2 (adesempio).
+- se il programma si intterompe a pagina X, riavviare il programma facendolo ripartire da pagina X-2 (adesempio). **Aggiornamento: questo problema puo' essere superato accettando un maggior numero di cifre decimali nel numero casuale che viene generato e associato temporaneamente al nome di ciascuna colonna della tabella. Aumentando il numero di cifre decimali si evita che due colonne abbiano lo stesso nome, fatto che genera un errore e quindi il blocco del programma**
 
 
 
