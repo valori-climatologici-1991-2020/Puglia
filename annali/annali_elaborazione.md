@@ -16,7 +16,7 @@ Il 2014 e' un pdf particolare: non si riesce a convertire in testo mediante ps2t
 
 ## Precipitazione
 
-Per la precipitazione la lettura delle tabelle e' avvenuta direttamente dai pdf mediante il pacchetto `tabulizer' senza passare per la conversione in file di testo (mediante ps2txt).
+Per la precipitazione la lettura delle tabelle e' avvenuta direttamente dai pdf mediante il pacchetto `tabulizer` senza passare per la conversione in file di testo (mediante ps2txt).
 Il pacchetto `tabulizer` consente la lettura delle tabelle che pero' poi richiedono molte rielaborazioni per arrivare alle tabelle finali. Il vantaggio di `tabulizer`
 e' che non risente della cattiva formattazione dei pdf (formattazione che crea a volte righe sflasate quando si convertono i pdf in testo mediante ps2txt).
 
