@@ -1,0 +1,1 @@
+OK il confronto ci dice che il programma scritto con tabulizer per estrarre dagli annali i dati di precipitazione funziona e i dati vanno  bene. 
