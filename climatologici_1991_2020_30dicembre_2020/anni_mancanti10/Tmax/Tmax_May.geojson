@@ -1,0 +1,1391 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "properties": {
+        "mm": 5,
+        "SiteID": 10,
+        "climatologico": 23.9326,
+        "SiteCode": 10,
+        "stazioni": "Avetrana",
+        "SiteName_norm": "Avetrana",
+        "SiteName": "AVETRANA",
+        "Elevation": 72
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.7279, 40.3436]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "mm": 5,
+        "SiteID": 100,
+        "climatologico": 19.3309,
+        "SiteCode": 100,
+        "stazioni": "Nusco",
+        "SiteName_norm": "Nusco",
+        "SiteName": "NUSCO",
+        "Elevation": 841
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.0836, 40.8876]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "mm": 5,
+        "SiteID": 102,
+        "climatologico": 25.4952,
+        "SiteCode": 102,
+        "stazioni": "Ortanova",
+        "SiteName_norm": "Ortanova",
+        "SiteName": "ORTANOVA",
+        "Elevation": 80
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7068, 41.3258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "properties": {
+        "mm": 5,
+        "SiteID": 104,
+        "climatologico": 22.9657,
+        "SiteCode": 104,
+        "stazioni": "Ostuni",
+        "SiteName_norm": "Ostuni",
+        "SiteName": "OSTUNI",
+        "Elevation": 115
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.5741, 40.7437]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "mm": 5,
+        "SiteID": 105,
+        "climatologico": 22.008,
+        "SiteCode": 105,
+        "stazioni": "Otranto",
+        "SiteName_norm": "Otranto",
+        "SiteName": "OTRANTO",
+        "Elevation": 29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.4885, 40.1438]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "properties": {
+        "mm": 5,
+        "SiteID": 108,
+        "climatologico": 19.5913,
+        "SiteCode": 108,
+        "stazioni": "Pescopagano",
+        "SiteName_norm": "Pescopagano",
+        "SiteName": "PESCOPAGANO",
+        "Elevation": 920
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3989, 40.8332]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "properties": {
+        "mm": 5,
+        "SiteID": 109,
+        "climatologico": 21.9884,
+        "SiteCode": 109,
+        "stazioni": "Pietramontecorvino",
+        "SiteName_norm": "Pietramontecorvino",
+        "SiteName": "PIETRAMONTECORVINO",
+        "Elevation": 464
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.1289, 41.5434]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "properties": {
+        "mm": 5,
+        "SiteID": 111,
+        "climatologico": 22.8254,
+        "SiteCode": 111,
+        "stazioni": "Polignano_a_mare",
+        "SiteName_norm": "Polignano_a_mare",
+        "SiteName": "POLIGNANO_A_MARE",
+        "Elevation": 50
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.219, 40.9912]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "properties": {
+        "mm": 5,
+        "SiteID": 112,
+        "climatologico": 24.1359,
+        "SiteCode": 112,
+        "stazioni": "Presicce",
+        "SiteName_norm": "Presicce",
+        "SiteName": "PRESICCE",
+        "Elevation": 105
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.267, 39.8966]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "properties": {
+        "mm": 5,
+        "SiteID": 118,
+        "climatologico": 24.6859,
+        "SiteCode": 118,
+        "stazioni": "Ruvo_di_puglia",
+        "SiteName_norm": "Ruvo_di_puglia",
+        "SiteName": "RUVO_DI_PUGLIA",
+        "Elevation": 276
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.4835, 41.1136]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "properties": {
+        "mm": 5,
+        "SiteID": 119,
+        "climatologico": 19.6574,
+        "SiteCode": 119,
+        "stazioni": "San_fele",
+        "SiteName_norm": "San_fele",
+        "SiteName": "SAN_FELE",
+        "Elevation": 902
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5403, 40.8197]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "properties": {
+        "mm": 5,
+        "SiteID": 12,
+        "climatologico": 23.6684,
+        "SiteCode": 12,
+        "stazioni": "Bari_(osservatorio)",
+        "SiteName_norm": "Bari_(osservatorio)",
+        "SiteName": "BARI_(OSSERVATORIO)",
+        "Elevation": 34
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.8718, 41.1173]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "properties": {
+        "mm": 5,
+        "SiteID": 120,
+        "climatologico": 25.0263,
+        "SiteCode": 120,
+        "stazioni": "San_giorgio_jonico",
+        "SiteName_norm": "San_giorgio_jonico",
+        "SiteName": "SAN_GIORGIO_JONICO",
+        "Elevation": 86
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.3822, 40.4578]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "properties": {
+        "mm": 5,
+        "SiteID": 121,
+        "climatologico": 20.6638,
+        "SiteCode": 121,
+        "stazioni": "San_giovanni_rotondo",
+        "SiteName_norm": "San_giovanni_rotondo",
+        "SiteName": "SAN_GIOVANNI_ROTONDO",
+        "Elevation": 572
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7088, 41.7067]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "properties": {
+        "mm": 5,
+        "SiteID": 123,
+        "climatologico": 23.5108,
+        "SiteCode": 123,
+        "stazioni": "Sannicandro_garganico",
+        "SiteName_norm": "San_nicandro_garganico",
+        "SiteName": "SAN_NICANDRO_GARGANICO",
+        "Elevation": 236
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5625, 41.8371]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "properties": {
+        "mm": 5,
+        "SiteID": 126,
+        "climatologico": 24.0446,
+        "SiteCode": 126,
+        "stazioni": "San_pietro_vernotico",
+        "SiteName_norm": "San_pietro_vernotico",
+        "SiteName": "SAN_PIETRO_VERNOTICO",
+        "Elevation": 49
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0015, 40.4806]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "properties": {
+        "mm": 5,
+        "SiteID": 127,
+        "climatologico": 25.5979,
+        "SiteCode": 127,
+        "stazioni": "San_samuele_di_cafiero",
+        "SiteName_norm": "San_samuele_di_cafiero",
+        "SiteName": "SAN_SAMUELE_DI_CAFIERO",
+        "Elevation": 46
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.0592, 41.2691]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "properties": {
+        "mm": 5,
+        "SiteID": 128,
+        "climatologico": 24.7241,
+        "SiteCode": 128,
+        "stazioni": "San_severo",
+        "SiteName_norm": "San_severo",
+        "SiteName": "SAN_SEVERO",
+        "Elevation": 97
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3838, 41.6928]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "properties": {
+        "mm": 5,
+        "SiteID": 130,
+        "climatologico": 22.998,
+        "SiteCode": 130,
+        "stazioni": "Santa_maria_di_leuca",
+        "SiteName_norm": "Santa_maria_di_leuca",
+        "SiteName": "SANTA_MARIA_DI_LEUCA",
+        "Elevation": 26
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.3549, 39.7986]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "properties": {
+        "mm": 5,
+        "SiteID": 133,
+        "climatologico": 24.1175,
+        "SiteCode": 133,
+        "stazioni": "San_vito_dei_normanni",
+        "SiteName_norm": "San_vito_dei_normanni",
+        "SiteName": "SAN_VITO_DEI_NORMANNI",
+        "Elevation": 116
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.7054, 40.6571]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "properties": {
+        "mm": 5,
+        "SiteID": 135,
+        "climatologico": 23.5438,
+        "SiteCode": 135,
+        "stazioni": "Spinazzola",
+        "SiteName_norm": "Spinazzola",
+        "SiteName": "SPINAZZOLA",
+        "Elevation": 458
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.097, 40.9616]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "properties": {
+        "mm": 5,
+        "SiteID": 137,
+        "climatologico": 23.3792,
+        "SiteCode": 137,
+        "stazioni": "Talsano",
+        "SiteName_norm": "Talsano",
+        "SiteName": "TALSANO",
+        "Elevation": 37
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.2728, 40.4102]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 22,
+      "properties": {
+        "mm": 5,
+        "SiteID": 138,
+        "climatologico": 25.0434,
+        "SiteCode": 138,
+        "stazioni": "Taranto",
+        "SiteName_norm": "Taranto",
+        "SiteName": "TARANTO",
+        "Elevation": 27
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.2504, 40.4643]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "properties": {
+        "mm": 5,
+        "SiteID": 139,
+        "climatologico": 24.4124,
+        "SiteCode": 139,
+        "stazioni": "Taviano",
+        "SiteName_norm": "Taviano",
+        "SiteName": "TAVIANO",
+        "Elevation": 72
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0888, 39.9818]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 24,
+      "properties": {
+        "mm": 5,
+        "SiteID": 14,
+        "climatologico": 24.1625,
+        "SiteCode": 14,
+        "stazioni": "Barletta",
+        "SiteName_norm": "Barletta",
+        "SiteName": "BARLETTA",
+        "Elevation": 30
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.2748, 41.3134]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 25,
+      "properties": {
+        "mm": 5,
+        "SiteID": 143,
+        "climatologico": 22.7865,
+        "SiteCode": 143,
+        "stazioni": "Troia",
+        "SiteName_norm": "Troia",
+        "SiteName": "TROIA",
+        "Elevation": 448
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3096, 41.3615]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "properties": {
+        "mm": 5,
+        "SiteID": 144,
+        "climatologico": 23.5888,
+        "SiteCode": 144,
+        "stazioni": "Turi",
+        "SiteName_norm": "Turi",
+        "SiteName": "TURI",
+        "Elevation": 260
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.0224, 40.9205]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 27,
+      "properties": {
+        "mm": 5,
+        "SiteID": 147,
+        "climatologico": 22.4771,
+        "SiteCode": 147,
+        "stazioni": "Vieste",
+        "SiteName_norm": "Vieste",
+        "SiteName": "VIESTE",
+        "Elevation": 53
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.1752, 41.88]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 28,
+      "properties": {
+        "mm": 5,
+        "SiteID": 148,
+        "climatologico": 22.6986,
+        "SiteCode": 148,
+        "stazioni": "Vignacastrisi",
+        "SiteName_norm": "Vignacastrisi",
+        "SiteName": "VIGNACASTRISI",
+        "Elevation": 99
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.4088, 40.0118]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "properties": {
+        "mm": 5,
+        "SiteID": 15,
+        "climatologico": 21.6525,
+        "SiteCode": 15,
+        "stazioni": "Biccari",
+        "SiteName_norm": "Biccari",
+        "SiteName": "BICCARI",
+        "Elevation": 470
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.19, 41.392]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 30,
+      "properties": {
+        "mm": 5,
+        "SiteID": 20,
+        "climatologico": 19.7087,
+        "SiteCode": 20,
+        "stazioni": "Bosco_umbra",
+        "SiteName_norm": "Bosco_umbra",
+        "SiteName": "BOSCO_UMBRA",
+        "Elevation": 798
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.9947, 41.817]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "properties": {
+        "mm": 5,
+        "SiteID": 22,
+        "climatologico": 23.2405,
+        "SiteCode": 22,
+        "stazioni": "Brindisi",
+        "SiteName_norm": "Brindisi",
+        "SiteName": "BRINDISI",
+        "Elevation": 19
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.9269, 40.6447]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "properties": {
+        "mm": 5,
+        "SiteID": 23,
+        "climatologico": 23.7509,
+        "SiteCode": 23,
+        "stazioni": "Cagnano_varano",
+        "SiteName_norm": "Cagnano_varano",
+        "SiteName": "CAGNANO_VARANO",
+        "Elevation": 181
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7696, 41.8262]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 33,
+      "properties": {
+        "mm": 5,
+        "SiteID": 27,
+        "climatologico": 26.0342,
+        "SiteCode": 27,
+        "stazioni": "Canosa_di_puglia",
+        "SiteName_norm": "Canosa_di_puglia",
+        "SiteName": "CANOSA_DI_PUGLIA",
+        "Elevation": 154
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.062, 41.224]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 34,
+      "properties": {
+        "mm": 5,
+        "SiteID": 3,
+        "climatologico": 23.2457,
+        "SiteCode": 3,
+        "stazioni": "Altamura",
+        "SiteName_norm": "Altamura",
+        "SiteName": "ALTAMURA",
+        "Elevation": 482
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.5534, 40.8231]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "properties": {
+        "mm": 5,
+        "SiteID": 30,
+        "climatologico": 23.6909,
+        "SiteCode": 30,
+        "stazioni": "Casamassima",
+        "SiteName_norm": "Casamassima",
+        "SiteName": "CASAMASSIMA",
+        "Elevation": 229
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.918, 40.954]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "properties": {
+        "mm": 5,
+        "SiteID": 31,
+        "climatologico": 24.0534,
+        "SiteCode": 31,
+        "stazioni": "Cassano_delle_murge",
+        "SiteName_norm": "Cassano_murge",
+        "SiteName": "CASSANO_MURGE",
+        "Elevation": 380
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.7709, 40.8897]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 37,
+      "properties": {
+        "mm": 5,
+        "SiteID": 32,
+        "climatologico": 23.1444,
+        "SiteCode": 32,
+        "stazioni": "Castel_del_monte",
+        "SiteName_norm": "Castel_del_monte",
+        "SiteName": "CASTEL_DEL_MONTE",
+        "Elevation": 543
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.2739, 41.0785]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "properties": {
+        "mm": 5,
+        "SiteID": 33,
+        "climatologico": 23.3233,
+        "SiteCode": 33,
+        "stazioni": "Castellana_grotte",
+        "SiteName_norm": "Castellana_grotte",
+        "SiteName": "CASTELLANA_GROTTE",
+        "Elevation": 290
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.1654, 40.8815]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "properties": {
+        "mm": 5,
+        "SiteID": 34,
+        "climatologico": 23.878,
+        "SiteCode": 34,
+        "stazioni": "Castellaneta",
+        "SiteName_norm": "Castellaneta",
+        "SiteName": "CASTELLANETA",
+        "Elevation": 236
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.9323, 40.6289]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 40,
+      "properties": {
+        "mm": 5,
+        "SiteID": 38,
+        "climatologico": 25.6853,
+        "SiteCode": 38,
+        "stazioni": "Cerignola",
+        "SiteName_norm": "Cerignola",
+        "SiteName": "CERIGNOLA",
+        "Elevation": 134
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.905, 41.2634]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "properties": {
+        "mm": 5,
+        "SiteID": 4,
+        "climatologico": 19.5177,
+        "SiteCode": 4,
+        "stazioni": "Andretta",
+        "SiteName_norm": "Andretta",
+        "SiteName": "ANDRETTA",
+        "Elevation": 890
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3326, 40.9283]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "properties": {
+        "mm": 5,
+        "SiteID": 42,
+        "climatologico": 24.0429,
+        "SiteCode": 42,
+        "stazioni": "Corato",
+        "SiteName_norm": "Corato",
+        "SiteName": "CORATO",
+        "Elevation": 249
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.4133, 41.1528]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 43,
+      "properties": {
+        "mm": 5,
+        "SiteID": 44,
+        "climatologico": 23.0364,
+        "SiteCode": 44,
+        "stazioni": "Crispiano",
+        "SiteName_norm": "Crispiano",
+        "SiteName": "CRISPIANO",
+        "Elevation": 264
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.2358, 40.599]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 44,
+      "properties": {
+        "mm": 5,
+        "SiteID": 48,
+        "climatologico": 25.2121,
+        "SiteCode": 48,
+        "stazioni": "Diga_abate_alonia_sul_torrente_rendina",
+        "SiteName_norm": "Diga_rendina",
+        "SiteName": "DIGA_RENDINA",
+        "Elevation": 214
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7944, 41.0498]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 45,
+      "properties": {
+        "mm": 5,
+        "SiteID": 5,
+        "climatologico": 24.2898,
+        "SiteCode": 5,
+        "stazioni": "Andria",
+        "SiteName_norm": "Andria",
+        "SiteName": "ANDRIA",
+        "Elevation": 162
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.2942, 41.2205]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 46,
+      "properties": {
+        "mm": 5,
+        "SiteID": 50,
+        "climatologico": 23.7886,
+        "SiteCode": 50,
+        "stazioni": "Fasano",
+        "SiteName_norm": "Fasano",
+        "SiteName": "FASANO",
+        "Elevation": 121
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.3583, 40.838]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 47,
+      "properties": {
+        "mm": 5,
+        "SiteID": 51,
+        "climatologico": 25.2093,
+        "SiteCode": 51,
+        "stazioni": "Foggia_(ist._sperim._per_cerealicoltura)",
+        "SiteName_norm": "Foggia_(ist._sper.le_colture_foragg.)",
+        "SiteName": "FOGGIA_(IST._SPER.LE_COLTURE_FORAGG.)",
+        "Elevation": 84
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5013, 41.4602]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 48,
+      "properties": {
+        "mm": 5,
+        "SiteID": 52,
+        "climatologico": 25.1891,
+        "SiteCode": 52,
+        "stazioni": "Foggia_(osservatorio)",
+        "SiteName_norm": "Foggia_(osservatorio)",
+        "SiteName": "FOGGIA_(OSSERVATORIO)",
+        "Elevation": 82
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5427, 41.4607]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 49,
+      "properties": {
+        "mm": 5,
+        "SiteID": 54,
+        "climatologico": 19.6161,
+        "SiteCode": 54,
+        "stazioni": "Forenza",
+        "SiteName_norm": "Forenza",
+        "SiteName": "FORENZA",
+        "Elevation": 753
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.8481, 40.8586]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 50,
+      "properties": {
+        "mm": 5,
+        "SiteID": 56,
+        "climatologico": 23.3007,
+        "SiteCode": 56,
+        "stazioni": "Gallipoli",
+        "SiteName_norm": "Gallipoli",
+        "SiteName": "GALLIPOLI",
+        "Elevation": 31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.9945, 40.0545]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 51,
+      "properties": {
+        "mm": 5,
+        "SiteID": 58,
+        "climatologico": 23.8157,
+        "SiteCode": 58,
+        "stazioni": "Ginosa_marina",
+        "SiteName_norm": "Ginosa_marina",
+        "SiteName": "GINOSA_MARINA",
+        "Elevation": 20
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.8844, 40.4266]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 52,
+      "properties": {
+        "mm": 5,
+        "SiteID": 59,
+        "climatologico": 23.4377,
+        "SiteCode": 59,
+        "stazioni": "Gioia_del_colle",
+        "SiteName_norm": "Gioia_del_colle",
+        "SiteName": "GIOIA_DEL_COLLE",
+        "Elevation": 377
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.9231, 40.8005]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 53,
+      "properties": {
+        "mm": 5,
+        "SiteID": 61,
+        "climatologico": 24.4065,
+        "SiteCode": 61,
+        "stazioni": "Grottaglie",
+        "SiteName_norm": "Grottaglie",
+        "SiteName": "GROTTAGLIE",
+        "Elevation": 140
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.4414, 40.5393]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 54,
+      "properties": {
+        "mm": 5,
+        "SiteID": 62,
+        "climatologico": 24.9272,
+        "SiteCode": 62,
+        "stazioni": "Grumo_appula",
+        "SiteName_norm": "Grumo_appula",
+        "SiteName": "GRUMO_APPULA",
+        "Elevation": 191
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.7104, 41.0117]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 55,
+      "properties": {
+        "mm": 5,
+        "SiteID": 64,
+        "climatologico": 20.1501,
+        "SiteCode": 64,
+        "stazioni": "Lagopesole",
+        "SiteName_norm": "Lagopesole",
+        "SiteName": "LAGOPESOLE",
+        "Elevation": 782
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7358, 40.803]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 56,
+      "properties": {
+        "mm": 5,
+        "SiteID": 65,
+        "climatologico": 24.4087,
+        "SiteCode": 65,
+        "stazioni": "Latiano",
+        "SiteName_norm": "Latiano",
+        "SiteName": "LATIANO",
+        "Elevation": 107
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.7098, 40.5486]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 57,
+      "properties": {
+        "mm": 5,
+        "SiteID": 66,
+        "climatologico": 24.5617,
+        "SiteCode": 66,
+        "stazioni": "Lavello",
+        "SiteName_norm": "Lavello",
+        "SiteName": "LAVELLO",
+        "Elevation": 328
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7952, 41.0508]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 58,
+      "properties": {
+        "mm": 5,
+        "SiteID": 67,
+        "climatologico": 24.8156,
+        "SiteCode": 67,
+        "stazioni": "Lecce",
+        "SiteName_norm": "Lecce",
+        "SiteName": "LECCE",
+        "Elevation": 50
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.1675, 40.3583]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 59,
+      "properties": {
+        "mm": 5,
+        "SiteID": 68,
+        "climatologico": 23.8719,
+        "SiteCode": 68,
+        "stazioni": "Lesina",
+        "SiteName_norm": "Lesina",
+        "SiteName": "LESINA",
+        "Elevation": 13
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3532, 41.8622]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 60,
+      "properties": {
+        "mm": 5,
+        "SiteID": 69,
+        "climatologico": 25.3128,
+        "SiteCode": 69,
+        "stazioni": "Lizzano",
+        "SiteName_norm": "Lizzano",
+        "SiteName": "LIZZANO",
+        "Elevation": 63
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.4487, 40.3874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 61,
+      "properties": {
+        "mm": 5,
+        "SiteID": 71,
+        "climatologico": 22.452,
+        "SiteCode": 71,
+        "stazioni": "Locorotondo",
+        "SiteName_norm": "Locorotondo",
+        "SiteName": "LOCOROTONDO",
+        "Elevation": 404
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.3382, 40.7534]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 62,
+      "properties": {
+        "mm": 5,
+        "SiteID": 72,
+        "climatologico": 24.2427,
+        "SiteCode": 72,
+        "stazioni": "Lucera",
+        "SiteName_norm": "Lucera",
+        "SiteName": "LUCERA",
+        "Elevation": 226
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3357, 41.5107]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 63,
+      "properties": {
+        "mm": 5,
+        "SiteID": 73,
+        "climatologico": 24.2499,
+        "SiteCode": 73,
+        "stazioni": "Maglie",
+        "SiteName_norm": "Maglie",
+        "SiteName": "MAGLIE",
+        "Elevation": 102
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.2936, 40.119]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 64,
+      "properties": {
+        "mm": 5,
+        "SiteID": 74,
+        "climatologico": 24.263,
+        "SiteCode": 74,
+        "stazioni": "Manduria",
+        "SiteName_norm": "Manduria",
+        "SiteName": "MANDURIA",
+        "Elevation": 81
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.6352, 40.398]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 65,
+      "properties": {
+        "mm": 5,
+        "SiteID": 75,
+        "climatologico": 24.9691,
+        "SiteCode": 75,
+        "stazioni": "Manfredonia_(bonifica_sipontina)",
+        "SiteName_norm": "Manfredonia-bonifica_sipontina",
+        "SiteName": "MANFREDONIA-BONIFICA_SIPONTINA",
+        "Elevation": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.8802, 41.5831]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 66,
+      "properties": {
+        "mm": 5,
+        "SiteID": 77,
+        "climatologico": 24.8337,
+        "SiteCode": 77,
+        "stazioni": "Massafra",
+        "SiteName_norm": "Massafra",
+        "SiteName": "MASSAFRA",
+        "Elevation": 110
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.1084, 40.5755]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 67,
+      "properties": {
+        "mm": 5,
+        "SiteID": 8,
+        "climatologico": 22.7806,
+        "SiteCode": 8,
+        "stazioni": "Ascoli_satriano",
+        "SiteName_norm": "Ascoli_satriano",
+        "SiteName": "ASCOLI_SATRIANO",
+        "Elevation": 437
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5646, 41.2012]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 68,
+      "properties": {
+        "mm": 5,
+        "SiteID": 82,
+        "climatologico": 24.2458,
+        "SiteCode": 82,
+        "stazioni": "Masseria_monteruga",
+        "SiteName_norm": "Masseria_monteruga",
+        "SiteName": "MASSERIA_MONTERUGA",
+        "Elevation": 92
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.8288, 40.3468]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 69,
+      "properties": {
+        "mm": 5,
+        "SiteID": 84,
+        "climatologico": 25.3274,
+        "SiteCode": 84,
+        "stazioni": "Masseria_santa_chiara",
+        "SiteName_norm": "Masseria_s._chiara",
+        "SiteName": "MASSERIA_S._CHIARA",
+        "Elevation": 9
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.1344, 41.3364]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 70,
+      "properties": {
+        "mm": 5,
+        "SiteID": 86,
+        "climatologico": 21.8008,
+        "SiteCode": 86,
+        "stazioni": "Melfi",
+        "SiteName_norm": "Melfi",
+        "SiteName": "MELFI",
+        "Elevation": 533
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.6272, 40.9891]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 71,
+      "properties": {
+        "mm": 5,
+        "SiteID": 87,
+        "climatologico": 23.9238,
+        "SiteCode": 87,
+        "stazioni": "Mercadante",
+        "SiteName_norm": "Mercadante",
+        "SiteName": "MERCADANTE",
+        "Elevation": 393
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.7006, 40.8897]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 72,
+      "properties": {
+        "mm": 5,
+        "SiteID": 88,
+        "climatologico": 23.9612,
+        "SiteCode": 88,
+        "stazioni": "Minervino_di_lecce",
+        "SiteName_norm": "Minervino_di_lecce",
+        "SiteName": "MINERVINO_DI_LECCE",
+        "Elevation": 104
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.4196, 40.0913]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 73,
+      "properties": {
+        "mm": 5,
+        "SiteID": 89,
+        "climatologico": 22.6697,
+        "SiteCode": 89,
+        "stazioni": "Minervino_murge",
+        "SiteName_norm": "Minervino_murge",
+        "SiteName": "MINERVINO_MURGE",
+        "Elevation": 454
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.084, 41.075]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 74,
+      "properties": {
+        "mm": 5,
+        "SiteID": 90,
+        "climatologico": 19.6882,
+        "SiteCode": 90,
+        "stazioni": "Monteleone_di_puglia",
+        "SiteName_norm": "Monteleone_di_puglia",
+        "SiteName": "MONTELEONE_DI_PUGLIA",
+        "Elevation": 844
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.2587, 41.1638]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 75,
+      "properties": {
+        "mm": 5,
+        "SiteID": 94,
+        "climatologico": 21.7363,
+        "SiteCode": 94,
+        "stazioni": "Monticchio_bagni",
+        "SiteName_norm": "Monticchio_bagni",
+        "SiteName": "MONTICCHIO_BAGNI",
+        "Elevation": 747
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.6067, 40.9364]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 76,
+      "properties": {
+        "mm": 5,
+        "SiteID": 97,
+        "climatologico": 24.8449,
+        "SiteCode": 97,
+        "stazioni": "Nardo'",
+        "SiteName_norm": "Nardo",
+        "SiteName": "NARDO",
+        "Elevation": 52
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0338, 40.1728]
+      }
+    }
+  ]
+} 
