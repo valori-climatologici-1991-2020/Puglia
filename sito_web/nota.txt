@@ -1,0 +1,5 @@
+Questi sono i programmi utilizzati a Gennaio 2021 per scaricare:
+-i dati 2020 (dati che prima o poi sicuramente verranno messi a disposizione in forma di Annali)
+- i dati 2014 (dati che dagli Annali non si e' riusciti ad acquisire e che il Centro Funzionale non ha inviato).
+
+Teoricamente, mediante questo programma e' possibile scaricare tutti i nuovi dati delle stazioni della Puglia senza piu' passare per gli Annali.
