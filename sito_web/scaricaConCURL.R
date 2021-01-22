@@ -37,7 +37,7 @@ if(grepl("^P",PARAMETRO)){
 read_delim(nomeAna,delim=";",col_names = TRUE)->codici
 
 
-"'http://93.57.89.4:8081/temporeale/api/stations/419/daily-data-novalidate/q' -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'"->stringa1
+"'http://93.57.89.4:8081/temporeale/api/stations/#CODICE#/daily-data-novalidate/q' -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0'"->stringa1
 "-H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Referer: http://93.57.89.4:8081/temporeale/stazioni/{CODICE}/giornalieri' -H 'Content-Type: application/json' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' -H 'Cookie: pugliatr.sid=s%3AX1D7pBWIcXXkF7Sfde0-RQ83xadGPsAj.lhr4vmTbYstH2ZkBPtr8C5QPylg%2FxJ%2FoiXN2lpc2R9M' -H 'Sec-GPC: 1'"->stringa2
 "--data '{\"rete\":1,\"sensore\":#SENSORE#,\"misura\":#MISURA#,\"giornaliero\":true,\"period\":\"days\",\"startData\":\"#ANNO#-01-01\",\"endData\":\"#ANNO#-12-31\"}'"->stringa3
 
@@ -49,7 +49,8 @@ glue::glue(stringa3,.open = "#",.close = "#")->stringa3
 purrr::walk(codici$codice,.f=function(CODICE){ 
   
   if(file.exists(glue::glue("{CODICE}.json"))) return()
-
+  glue::glue(stringa1,.open = "#",.close = "#")->stringa1
+  
   glue::glue(stringa2)->stringa2Fixed
   
   
@@ -57,6 +58,7 @@ purrr::walk(codici$codice,.f=function(CODICE){
   str_c(stringa1,stringa2Fixed,stringa3,sep=" ")->stringacURL
   str_c("curl",stringacURL,glue::glue(">{CODICE}.json"),sep=" ")->esegui
   try({system(esegui)})
+  
   Sys.sleep(10) # importante almeno 10 secondi 
 
 })
