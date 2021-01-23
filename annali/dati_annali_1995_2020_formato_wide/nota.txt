@@ -1,0 +1,6 @@
+23 gennaio 2021
+
+Questi dati derivano:
+- dati forniti dal Centro Funzionale
+- dati acquisiti dagli Annali (pdf) dal sito del Centro Funzionale (dati dal 2013 al 2019)
+- dati 2014 e 2020 acqusiti dal sito del Centro Funzionale, dati in formato json (non sono scaricabili ma si riescono ad ottenere dalla pagina che mostra i grafici delle serie di un determinato anno).

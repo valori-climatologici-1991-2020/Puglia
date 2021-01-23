@@ -3,26 +3,19 @@ library("jsonlite")
 library("tidyverse")
 library("guido")
 
-annoI<-annoF<-2014
+annoI<-annoF<-2020
 creaCalendario(annoI,annoF)->calendario
 
-PARAMETRO<-c("Tmax","Tmin")[1]
-
-if(grepl("Tmax",PARAMETRO)){
-  ID<-1873
-}else if(grepl("Tmin",PARAMETRO)){
-  ID<-1871
-}else if(grepl("^P.+",PARAMETRO)){
-  
-}
+PARAMETRO<-c("Prec","Tmax","Tmin")[3]
 
 list.files(pattern="^.+\\.json$")->ffile
 
-purrr::map_dfc(ffile,.f=function(nomeFile){
-  browser()
-  read_json(nomeFile,simplifyVector = TRUE) %>%
-    filter(Id==ID)->dati
+purrr::map(ffile,.f=function(nomeFile){
   
+  read_json(nomeFile,simplifyVector = TRUE)->dati
+
+  if(!length(dati)) return()
+
   dati$Stazione[1]->idstaz
   
   stopifnot(str_remove(nomeFile,"\\.json")==idstaz)
@@ -34,12 +27,41 @@ purrr::map_dfc(ffile,.f=function(nomeFile){
     mutate(yy=as.integer(yy),mm=as.integer(mm),dd=as.integer(dd)) %>%
     dplyr::select(yy,mm,dd,Valore)->dati2
   
-  names(dati2)[4]<-idstaz
   
-  dati2[!duplicated(dati2[,c("yy","mm","dd")]),]
+  if(grepl("Tmax",PARAMETRO)){
+    
+    dati2 %>% 
+      group_by(yy,mm,dd) %>%
+      summarise_all(.funs=max,na.rm=TRUE) %>%
+      ungroup()->dati3
+    
+  }else if(grepl("Tmin",PARAMETRO)){
+    
+    
+    dati2 %>% 
+      group_by(yy,mm,dd) %>%
+      summarise_all(.funs=min,na.rm=TRUE) %>%
+      ungroup()->dati3
+    
+  }else if(grepl("^P.+",PARAMETRO)){
+    
+    dati2->dati3
+    
+  }
+
+  names(dati3)[4]<-idstaz
+  print(idstaz)
+  dati3[!duplicated(dati3[,c("yy","mm","dd")]),]
   
   
-}) %>% purrr::reduce(.f=left_join,.init=calendario)->finale
+})->listaOut
+
+purrr::compact(listaOut)->listaOut
+
+if(!length(listaOut)) stop(glue::glue("Nessun dato per {PARAMETRO}"))
+
+
+purrr::reduce(listaOut,.f=left_join,.init=calendario)->finale
 
 
 print(skimr::skim(calendario))
