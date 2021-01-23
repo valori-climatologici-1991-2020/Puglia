@@ -16,9 +16,9 @@ library("tidyverse")
 library("RCurl")
 
 #anno da scaricare
-ANNO<-2014
+ANNO<-2020
 
-PARAMETRO<-c("Prec","Temp")[1]
+PARAMETRO<-c("Prec","Temp")[2]
 
 if(grepl("^P",PARAMETRO)){ 
   SENSORE<-0

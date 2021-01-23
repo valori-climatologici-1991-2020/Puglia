@@ -1,3 +1,6 @@
+La STazione SiteCode riporta i codici delle stazioni riportati nel sito del Centro Funzionale della Puglia (riportati nel codice html dell'anagrafica)
+
+
 Anagrafica delle stazioni della Puglia.
 
 LE STAZIONI SENZA SITEID SONO:
