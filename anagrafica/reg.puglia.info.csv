@@ -142,7 +142,7 @@ SiteID;SiteCode;SiteName;Elevation;Longitude;Latitude;altro_nome1;altro_nome2
 151;103;NA;NA;NA;NA;Acquaviva_delle_fonti;Acquaviva_delle_fonti
 152;501;NA;NA;NA;NA;Alessano;NA
 153;116;NA;NA;NA;NA;Arpinova;NA
-154;466;NA;NA;NA;NA;Bari_(politecnico);Bari_(politecnico)
+11;466;BARI_(FACOLTA_DINGEGNERIA);23;16.8779194444;41.1064833333;Bari_(politecnico);Bari_(politecnico)
 155;402;NA;NA;NA;NA;Bari_idrografico;NA
 156;810;NA;NA;NA;NA;Bradano_p.te_colonna_(basil);NA
 157;82;NA;NA;NA;NA;Can.asso;NA
