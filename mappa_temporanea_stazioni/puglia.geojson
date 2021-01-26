@@ -1,0 +1,2404 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "properties": {
+        "SiteID": 1,
+        "SiteCode": 465,
+        "SiteName": "ADELFIA",
+        "Elevation": 153,
+        "altro_nome1": "Adelfia",
+        "altro_nome2": "Adelfia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.8666, 41.0003]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "SiteID": 2,
+        "SiteCode": 476,
+        "SiteName": "ALBERONA",
+        "Elevation": 744,
+        "altro_nome1": "Alberona",
+        "altro_nome2": "Alberona"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.1234, 41.4309]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "SiteID": 3,
+        "SiteCode": 401,
+        "SiteName": "ALTAMURA",
+        "Elevation": 482,
+        "altro_nome1": "Altamura",
+        "altro_nome2": "Altamura"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.5534, 40.8231]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "properties": {
+        "SiteID": 4,
+        "SiteCode": 46,
+        "SiteName": "ANDRETTA",
+        "Elevation": 890,
+        "altro_nome1": "Andretta",
+        "altro_nome2": "Andretta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3326, 40.9283]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "SiteID": 5,
+        "SiteCode": 33,
+        "SiteName": "ANDRIA",
+        "Elevation": 162,
+        "altro_nome1": "Andria",
+        "altro_nome2": "Andria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.2942, 41.2205]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "properties": {
+        "SiteID": 6,
+        "SiteCode": 62,
+        "SiteName": "ANZANO_DI_PUGLIA",
+        "Elevation": 760,
+        "altro_nome1": "Anzano_di_puglia",
+        "altro_nome2": "Anzano_di_puglia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.281, 41.1243]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "properties": {
+        "SiteID": 7,
+        "SiteCode": 63,
+        "SiteName": "APRICENA",
+        "Elevation": 73,
+        "altro_nome1": "Apricena",
+        "altro_nome2": "Apricena"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.4482, 41.7814]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "properties": {
+        "SiteID": 8,
+        "SiteCode": 55,
+        "SiteName": "ASCOLI_SATRIANO",
+        "Elevation": 437,
+        "altro_nome1": "Ascoli_satriano",
+        "altro_nome2": "Ascoli_satriano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5646, 41.2012]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "properties": {
+        "SiteID": 9,
+        "SiteCode": 495,
+        "SiteName": "ATELLA",
+        "Elevation": 495,
+        "altro_nome1": "Atella",
+        "altro_nome2": "Atella"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.6524, 40.8727]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "properties": {
+        "SiteID": 10,
+        "SiteCode": 56,
+        "SiteName": "AVETRANA",
+        "Elevation": 72,
+        "altro_nome1": "Avetrana",
+        "altro_nome2": "Avetrana"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.7279, 40.3436]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "properties": {
+        "SiteID": 11,
+        "SiteCode": 466,
+        "SiteName": "BARI_(FACOLTA_DINGEGNERIA)",
+        "Elevation": 23,
+        "altro_nome1": "Bari_(politecnico)",
+        "altro_nome2": "Bari_(politecnico)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.8779, 41.1065]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "properties": {
+        "SiteID": 12,
+        "SiteCode": 467,
+        "SiteName": "BARI_(OSSERVATORIO)",
+        "Elevation": 34,
+        "altro_nome1": "Bari_(osservatorio)",
+        "altro_nome2": "Bari_(osservatorio)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.8718, 41.1173]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "properties": {
+        "SiteID": 13,
+        "SiteCode": 402,
+        "SiteName": "BARI_(UFFICIO_IDROGRAFICO)",
+        "Elevation": 17,
+        "altro_nome1": "Bari_idrografico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.882, 41.1198]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "properties": {
+        "SiteID": 14,
+        "SiteCode": 29,
+        "SiteName": "BARLETTA",
+        "Elevation": 30,
+        "altro_nome1": "Barletta",
+        "altro_nome2": "Barletta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.2748, 41.3134]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "properties": {
+        "SiteID": 15,
+        "SiteCode": 403,
+        "SiteName": "BICCARI",
+        "Elevation": 470,
+        "altro_nome1": "Biccari",
+        "altro_nome2": "Biccari"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.19, 41.392]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "properties": {
+        "SiteID": 16,
+        "SiteCode": 464,
+        "SiteName": "BISACCIA",
+        "Elevation": 900,
+        "altro_nome1": "Bisaccia",
+        "altro_nome2": "Bisaccia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3795, 41.007]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "properties": {
+        "SiteID": 17,
+        "SiteCode": 1,
+        "SiteName": "BISCEGLIE",
+        "Elevation": 32,
+        "altro_nome1": "Bisceglie",
+        "altro_nome2": "Bisceglie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.4968, 41.2382]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "properties": {
+        "SiteID": 18,
+        "SiteCode": 468,
+        "SiteName": "BITONTO",
+        "Elevation": 126,
+        "altro_nome1": "Bitonto",
+        "altro_nome2": "Bitonto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.6941, 41.1091]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "properties": {
+        "SiteID": 19,
+        "SiteCode": 404,
+        "SiteName": "BORGO_LIBERTA",
+        "Elevation": 252,
+        "altro_nome1": "Borgo_liberta",
+        "altro_nome2": "Borgo_liberta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7156, 41.1889]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "properties": {
+        "SiteID": 20,
+        "SiteCode": 405,
+        "SiteName": "BOSCO_UMBRA",
+        "Elevation": 798,
+        "altro_nome1": "Bosco_umbra",
+        "altro_nome2": "Bosco_umbra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.9947, 41.817]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "properties": {
+        "SiteID": 21,
+        "SiteCode": 406,
+        "SiteName": "BOVINO",
+        "Elevation": 620,
+        "altro_nome1": "Bovino",
+        "altro_nome2": "Bovino"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3375, 41.245]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "properties": {
+        "SiteID": 22,
+        "SiteCode": 6,
+        "SiteName": "BRINDISI",
+        "Elevation": 19,
+        "altro_nome1": "Brindisi",
+        "altro_nome2": "Brindisi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.9269, 40.6447]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 22,
+      "properties": {
+        "SiteID": 23,
+        "SiteCode": 407,
+        "SiteName": "CAGNANO_VARANO",
+        "Elevation": 181,
+        "altro_nome1": "Cagnano_varano",
+        "altro_nome2": "Cagnano_varano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7696, 41.8262]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "properties": {
+        "SiteID": 24,
+        "SiteCode": 408,
+        "SiteName": "CALITRI",
+        "Elevation": 706,
+        "altro_nome1": "Calitri",
+        "altro_nome2": "Calitri"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.4074, 40.9299]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 24,
+      "properties": {
+        "SiteID": 26,
+        "SiteCode": 477,
+        "SiteName": "CANDELA",
+        "Elevation": 475,
+        "altro_nome1": "Candela",
+        "altro_nome2": "Candela"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5164, 41.1329]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 25,
+      "properties": {
+        "SiteID": 27,
+        "SiteCode": 409,
+        "SiteName": "CANOSA_DI_PUGLIA",
+        "Elevation": 154,
+        "altro_nome1": "Canosa_di_puglia",
+        "altro_nome2": "Canosa_di_puglia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.062, 41.224]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "properties": {
+        "SiteID": 28,
+        "SiteCode": 84,
+        "SiteName": "CARLANTINO",
+        "Elevation": 582,
+        "altro_nome1": "Carlantino",
+        "altro_nome2": "Carlantino"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.9795, 41.5908]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 27,
+      "properties": {
+        "SiteID": 29,
+        "SiteCode": 91,
+        "SiteName": "CASALNUOVO_MONTEROTARO",
+        "Elevation": 417,
+        "altro_nome1": "Casalnuovo_monterotaro",
+        "altro_nome2": "Casalnuovo_monterotaro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.1, 41.6167]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 28,
+      "properties": {
+        "SiteID": 30,
+        "SiteCode": 42,
+        "SiteName": "CASAMASSIMA",
+        "Elevation": 229,
+        "altro_nome1": "Casamassima",
+        "altro_nome2": "Casamassima"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.918, 40.954]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "properties": {
+        "SiteID": 31,
+        "SiteCode": 53,
+        "SiteName": "CASSANO_MURGE",
+        "Elevation": 380,
+        "altro_nome1": "Cassano_murge",
+        "altro_nome2": "Cassano_delle_murge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.7709, 40.8897]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 30,
+      "properties": {
+        "SiteID": 32,
+        "SiteCode": 410,
+        "SiteName": "CASTEL_DEL_MONTE",
+        "Elevation": 543,
+        "altro_nome1": "Castel_del_monte",
+        "altro_nome2": "Castel_del_monte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.2739, 41.0785]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "properties": {
+        "SiteID": 33,
+        "SiteCode": 411,
+        "SiteName": "CASTELLANA_GROTTE",
+        "Elevation": 290,
+        "altro_nome1": "Castellana_grotte",
+        "altro_nome2": "Castellana_grotte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.1654, 40.8815]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "properties": {
+        "SiteID": 34,
+        "SiteCode": 51,
+        "SiteName": "CASTELLANETA",
+        "Elevation": 236,
+        "altro_nome1": "Castellaneta",
+        "altro_nome2": "Castellaneta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.9323, 40.6289]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 33,
+      "properties": {
+        "SiteID": 35,
+        "SiteCode": 412,
+        "SiteName": "CASTELLUCCIO_DEI_SAURI",
+        "Elevation": 284,
+        "altro_nome1": "Castelluccio_dei_sauri",
+        "altro_nome2": "Castelluccio_dei_sauri"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.4762, 41.3027]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 34,
+      "properties": {
+        "SiteID": 36,
+        "SiteCode": 474,
+        "SiteName": "CEGLIE_MESSAPICA",
+        "Elevation": 286,
+        "altro_nome1": "Ceglie_messapica",
+        "altro_nome2": "Ceglie_messapica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.5182, 40.6452]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "properties": {
+        "SiteID": 37,
+        "SiteCode": 85,
+        "SiteName": "CELENZA_VALFORTORE",
+        "Elevation": 592,
+        "altro_nome1": "Celenza_valfortore",
+        "altro_nome2": "Celenza_valfortore"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.9994, 41.565]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "properties": {
+        "SiteID": 38,
+        "SiteCode": 21,
+        "SiteName": "CERIGNOLA",
+        "Elevation": 134,
+        "altro_nome1": "Cerignola",
+        "altro_nome2": "Cerignola"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.905, 41.2634]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 37,
+      "properties": {
+        "SiteID": 39,
+        "SiteCode": 488,
+        "SiteName": "COLLEPASSO",
+        "Elevation": 120,
+        "altro_nome1": "Collepasso",
+        "altro_nome2": "Collepasso"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.1676, 40.0726]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "properties": {
+        "SiteID": 40,
+        "SiteCode": 469,
+        "SiteName": "CONVERSANO",
+        "Elevation": 212,
+        "altro_nome1": "Conversano",
+        "altro_nome2": "Conversano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.1141, 40.9632]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "properties": {
+        "SiteID": 41,
+        "SiteCode": 489,
+        "SiteName": "COPERTINO",
+        "Elevation": 48,
+        "altro_nome1": "Copertino",
+        "altro_nome2": "Copertino"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0516, 40.2684]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 40,
+      "properties": {
+        "SiteID": 42,
+        "SiteCode": 16,
+        "SiteName": "CORATO",
+        "Elevation": 249,
+        "altro_nome1": "Corato",
+        "altro_nome2": "Corato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.4133, 41.1528]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "properties": {
+        "SiteID": 43,
+        "SiteCode": 413,
+        "SiteName": "CORIGLIANO_D_OTRANTO",
+        "Elevation": 105,
+        "altro_nome1": "Corigliano_d_otranto",
+        "altro_nome2": "Corigliano_d'otranto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.2557, 40.1641]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "properties": {
+        "SiteID": 44,
+        "SiteCode": 498,
+        "SiteName": "CRISPIANO",
+        "Elevation": 264,
+        "altro_nome1": "Crispiano",
+        "altro_nome2": "Crispiano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.2358, 40.599]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 43,
+      "properties": {
+        "SiteID": 45,
+        "SiteCode": 64,
+        "SiteName": "DELICETO",
+        "Elevation": 573,
+        "altro_nome1": "Deliceto",
+        "altro_nome2": "Deliceto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3891, 41.222]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 44,
+      "properties": {
+        "SiteID": 46,
+        "SiteCode": 414,
+        "SiteName": "DIGA_CELONE",
+        "Elevation": 170,
+        "altro_nome1": "Diga_celone",
+        "altro_nome2": "Diga_torrebianca_sul_torrente_celone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.436, 41.4244]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 45,
+      "properties": {
+        "SiteID": 47,
+        "SiteCode": 415,
+        "SiteName": "DIGA_OSENTO",
+        "Elevation": 503,
+        "altro_nome1": "Diga_osento",
+        "altro_nome2": "Diga_san_pietro_sul_torrente_osento"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5005, 41.0034]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 46,
+      "properties": {
+        "SiteID": 48,
+        "SiteCode": 45,
+        "SiteName": "DIGA_RENDINA",
+        "Elevation": 214,
+        "altro_nome1": "Diga_rendina",
+        "altro_nome2": "Diga_abate_alonia_sul_torrente_rendina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7944, 41.0498]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 47,
+      "properties": {
+        "SiteID": 49,
+        "SiteCode": 3,
+        "SiteName": "FAETO",
+        "Elevation": 776,
+        "altro_nome1": "Faeto",
+        "altro_nome2": "Faeto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.1632, 41.3221]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 48,
+      "properties": {
+        "SiteID": 50,
+        "SiteCode": 24,
+        "SiteName": "FASANO",
+        "Elevation": 121,
+        "altro_nome1": "Fasano",
+        "altro_nome2": "Fasano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.3583, 40.838]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 49,
+      "properties": {
+        "SiteID": 51,
+        "SiteCode": 418,
+        "SiteName": "FOGGIA_(IST._SPER.LE_COLTURE_FORAGG.)",
+        "Elevation": 84,
+        "altro_nome1": "Foggia_(ist._sper.le_colture_foragg.)",
+        "altro_nome2": "Foggia_(ist._sperim._per_cerealicoltura)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5013, 41.4602]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 50,
+      "properties": {
+        "SiteID": 52,
+        "SiteCode": 26,
+        "SiteName": "FOGGIA_(OSSERVATORIO)",
+        "Elevation": 82,
+        "altro_nome1": "Foggia_(osservatorio)",
+        "altro_nome2": "Foggia_(osservatorio)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5427, 41.4607]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 51,
+      "properties": {
+        "SiteID": 53,
+        "SiteCode": 478,
+        "SiteName": "FONTE_ROSA",
+        "Elevation": 25,
+        "altro_nome1": "Fonte_rosa",
+        "altro_nome2": "Fonte_rosa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7743, 41.4343]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 52,
+      "properties": {
+        "SiteID": 54,
+        "SiteCode": 419,
+        "SiteName": "FORENZA",
+        "Elevation": 753,
+        "altro_nome1": "Forenza",
+        "altro_nome2": "Forenza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.8481, 40.8586]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 53,
+      "properties": {
+        "SiteID": 55,
+        "SiteCode": 490,
+        "SiteName": "GALATINA",
+        "Elevation": 84,
+        "altro_nome1": "Galatina",
+        "altro_nome2": "Galatina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.1715, 40.172]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 54,
+      "properties": {
+        "SiteID": 56,
+        "SiteCode": 420,
+        "SiteName": "GALLIPOLI",
+        "Elevation": 31,
+        "altro_nome1": "Gallipoli",
+        "altro_nome2": "Gallipoli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.9945, 40.0545]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 55,
+      "properties": {
+        "SiteID": 57,
+        "SiteCode": 421,
+        "SiteName": "GINOSA",
+        "Elevation": 272,
+        "altro_nome1": "Ginosa",
+        "altro_nome2": "Ginosa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.7575, 40.5768]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 56,
+      "properties": {
+        "SiteID": 58,
+        "SiteCode": 54,
+        "SiteName": "GINOSA_MARINA",
+        "Elevation": 20,
+        "altro_nome1": "Ginosa_marina",
+        "altro_nome2": "Ginosa_marina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.8844, 40.4266]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 57,
+      "properties": {
+        "SiteID": 59,
+        "SiteCode": 27,
+        "SiteName": "GIOIA_DEL_COLLE",
+        "Elevation": 377,
+        "altro_nome1": "Gioia_del_colle",
+        "altro_nome2": "Gioia_del_colle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.9231, 40.8005]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 58,
+      "properties": {
+        "SiteID": 60,
+        "SiteCode": 470,
+        "SiteName": "GIOVINAZZO",
+        "Elevation": 25,
+        "altro_nome1": "Giovinazzo",
+        "altro_nome2": "Giovinazzo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.6711, 41.1855]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 59,
+      "properties": {
+        "SiteID": 61,
+        "SiteCode": 37,
+        "SiteName": "GROTTAGLIE",
+        "Elevation": 140,
+        "altro_nome1": "Grottaglie",
+        "altro_nome2": "Grottaglie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.4414, 40.5393]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 60,
+      "properties": {
+        "SiteID": 62,
+        "SiteCode": 12,
+        "SiteName": "GRUMO_APPULA",
+        "Elevation": 191,
+        "altro_nome1": "Grumo_appula",
+        "altro_nome2": "Grumo_appula"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.7104, 41.0117]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 61,
+      "properties": {
+        "SiteID": 64,
+        "SiteCode": 422,
+        "SiteName": "LAGOPESOLE",
+        "Elevation": 782,
+        "altro_nome1": "Lagopesole",
+        "altro_nome2": "Lagopesole"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7358, 40.803]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 62,
+      "properties": {
+        "SiteID": 65,
+        "SiteCode": 35,
+        "SiteName": "LATIANO",
+        "Elevation": 107,
+        "altro_nome1": "Latiano",
+        "altro_nome2": "Latiano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.7098, 40.5486]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 63,
+      "properties": {
+        "SiteID": 66,
+        "SiteCode": 50,
+        "SiteName": "LAVELLO",
+        "Elevation": 328,
+        "altro_nome1": "Lavello",
+        "altro_nome2": "Lavello"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7952, 41.0508]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 64,
+      "properties": {
+        "SiteID": 67,
+        "SiteCode": 423,
+        "SiteName": "LECCE",
+        "Elevation": 50,
+        "altro_nome1": "Lecce",
+        "altro_nome2": "Lecce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.1675, 40.3583]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 65,
+      "properties": {
+        "SiteID": 68,
+        "SiteCode": 424,
+        "SiteName": "LESINA",
+        "Elevation": 13,
+        "altro_nome1": "Lesina",
+        "altro_nome2": "Lesina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3532, 41.8622]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 66,
+      "properties": {
+        "SiteID": 69,
+        "SiteCode": 52,
+        "SiteName": "LIZZANO",
+        "Elevation": 63,
+        "altro_nome1": "Lizzano",
+        "altro_nome2": "Lizzano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.4487, 40.3874]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 67,
+      "properties": {
+        "SiteID": 70,
+        "SiteCode": 471,
+        "SiteName": "LOCONIA",
+        "Elevation": 102,
+        "altro_nome1": "Loconia",
+        "altro_nome2": "Loconia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.9405, 41.1606]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 68,
+      "properties": {
+        "SiteID": 71,
+        "SiteCode": 25,
+        "SiteName": "LOCOROTONDO",
+        "Elevation": 404,
+        "altro_nome1": "Locorotondo",
+        "altro_nome2": "Locorotondo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.3382, 40.7534]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 69,
+      "properties": {
+        "SiteID": 72,
+        "SiteCode": 49,
+        "SiteName": "LUCERA",
+        "Elevation": 226,
+        "altro_nome1": "Lucera",
+        "altro_nome2": "Lucera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3357, 41.5107]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 70,
+      "properties": {
+        "SiteID": 73,
+        "SiteCode": 8,
+        "SiteName": "MAGLIE",
+        "Elevation": 102,
+        "altro_nome1": "Maglie",
+        "altro_nome2": "Maglie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.2936, 40.119]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 71,
+      "properties": {
+        "SiteID": 74,
+        "SiteCode": 499,
+        "SiteName": "MANDURIA",
+        "Elevation": 81,
+        "altro_nome1": "Manduria",
+        "altro_nome2": "Manduria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.6352, 40.398]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 72,
+      "properties": {
+        "SiteID": 75,
+        "SiteCode": 425,
+        "SiteName": "MANFREDONIA-BONIFICA_SIPONTINA",
+        "Elevation": 2,
+        "altro_nome1": "Manfredonia-bonifica_sipontina",
+        "altro_nome2": "Manfredonia_(bonifica_sipontina)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.8802, 41.5831]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 73,
+      "properties": {
+        "SiteID": 76,
+        "SiteCode": 426,
+        "SiteName": "MARTINA_FRANCA",
+        "Elevation": 439,
+        "altro_nome1": "Martina_franca",
+        "altro_nome2": "Martina_franca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.3453, 40.6928]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 74,
+      "properties": {
+        "SiteID": 77,
+        "SiteCode": 41,
+        "SiteName": "MASSAFRA",
+        "Elevation": 110,
+        "altro_nome1": "Massafra",
+        "altro_nome2": "Massafra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.1084, 40.5755]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 75,
+      "properties": {
+        "SiteID": 81,
+        "SiteCode": 87,
+        "SiteName": "MASSERIA_MODESTI",
+        "Elevation": 501,
+        "altro_nome1": "Masseria_modesti",
+        "altro_nome2": "Masseria_modesti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.4056, 40.9894]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 76,
+      "properties": {
+        "SiteID": 82,
+        "SiteCode": 427,
+        "SiteName": "MASSERIA_MONTERUGA",
+        "Elevation": 92,
+        "altro_nome1": "Masseria_monteruga",
+        "altro_nome2": "Masseria_monteruga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.8288, 40.3468]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 77,
+      "properties": {
+        "SiteID": 84,
+        "SiteCode": 428,
+        "SiteName": "MASSERIA_S._CHIARA",
+        "Elevation": 9,
+        "altro_nome1": "Masseria_s._chiara",
+        "altro_nome2": "Masseria_santa_chiara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.1344, 41.3364]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 78,
+      "properties": {
+        "SiteID": 85,
+        "SiteCode": 491,
+        "SiteName": "MELENDUGNO",
+        "Elevation": 50,
+        "altro_nome1": "Melendugno",
+        "altro_nome2": "Melendugno"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.3333, 40.2693]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 79,
+      "properties": {
+        "SiteID": 86,
+        "SiteCode": 429,
+        "SiteName": "MELFI",
+        "Elevation": 533,
+        "altro_nome1": "Melfi",
+        "altro_nome2": "Melfi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.6272, 40.9891]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 80,
+      "properties": {
+        "SiteID": 87,
+        "SiteCode": 430,
+        "SiteName": "MERCADANTE",
+        "Elevation": 393,
+        "altro_nome1": "Mercadante",
+        "altro_nome2": "Mercadante"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.7006, 40.8897]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 81,
+      "properties": {
+        "SiteID": 88,
+        "SiteCode": 492,
+        "SiteName": "MINERVINO_DI_LECCE",
+        "Elevation": 104,
+        "altro_nome1": "Minervino_di_lecce",
+        "altro_nome2": "Minervino_di_lecce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.4196, 40.0913]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 82,
+      "properties": {
+        "SiteID": 89,
+        "SiteCode": 32,
+        "SiteName": "MINERVINO_MURGE",
+        "Elevation": 454,
+        "altro_nome1": "Minervino_murge",
+        "altro_nome2": "Minervino_murge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.084, 41.075]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 83,
+      "properties": {
+        "SiteID": 90,
+        "SiteCode": 30,
+        "SiteName": "MONTELEONE_DI_PUGLIA",
+        "Elevation": 844,
+        "altro_nome1": "Monteleone_di_puglia",
+        "altro_nome2": "Monteleone_di_puglia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.2587, 41.1638]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 84,
+      "properties": {
+        "SiteID": 91,
+        "SiteCode": 432,
+        "SiteName": "MONTEMILONE",
+        "Elevation": 343,
+        "altro_nome1": "Montemilone",
+        "altro_nome2": "Montemilone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.9656, 41.0251]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 85,
+      "properties": {
+        "SiteID": 92,
+        "SiteCode": 48,
+        "SiteName": "MONTE_S._ANGELO",
+        "Elevation": 817,
+        "altro_nome1": "Monte_s._angelo",
+        "altro_nome2": "Monte_sant'angelo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.9618, 41.7055]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 86,
+      "properties": {
+        "SiteID": 94,
+        "SiteCode": 13,
+        "SiteName": "MONTICCHIO_BAGNI",
+        "Elevation": 747,
+        "altro_nome1": "Monticchio_bagni",
+        "altro_nome2": "Monticchio_bagni"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.6067, 40.9364]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 87,
+      "properties": {
+        "SiteID": 95,
+        "SiteCode": 433,
+        "SiteName": "MONTURSI",
+        "Elevation": 387,
+        "altro_nome1": "Montursi",
+        "altro_nome2": "Montursi_(aqp)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.883, 40.7598]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 88,
+      "properties": {
+        "SiteID": 96,
+        "SiteCode": 500,
+        "SiteName": "MOTTOLA",
+        "Elevation": 334,
+        "altro_nome1": "Mottola",
+        "altro_nome2": "Mottola"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.0412, 40.6388]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 89,
+      "properties": {
+        "SiteID": 97,
+        "SiteCode": 19,
+        "SiteName": "NARDO",
+        "Elevation": 52,
+        "altro_nome1": "Nardo",
+        "altro_nome2": "Nardo'"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0338, 40.1728]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 90,
+      "properties": {
+        "SiteID": 98,
+        "SiteCode": 472,
+        "SiteName": "NOCI",
+        "Elevation": 431,
+        "altro_nome1": "Noci",
+        "altro_nome2": "Noci"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.1229, 40.7953]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 91,
+      "properties": {
+        "SiteID": 99,
+        "SiteCode": 493,
+        "SiteName": "NOVOLI",
+        "Elevation": 51,
+        "altro_nome1": "Novoli",
+        "altro_nome2": "Novoli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0512, 40.3781]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 92,
+      "properties": {
+        "SiteID": 100,
+        "SiteCode": 434,
+        "SiteName": "NUSCO",
+        "Elevation": 841,
+        "altro_nome1": "Nusco",
+        "altro_nome2": "Nusco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.0836, 40.8876]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 93,
+      "properties": {
+        "SiteID": 101,
+        "SiteCode": 479,
+        "SiteName": "ORSARA_DI_PUGLIA",
+        "Elevation": 683,
+        "altro_nome1": "Orsara_di_puglia",
+        "altro_nome2": "Orsara_di_puglia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.2665, 41.2804]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 94,
+      "properties": {
+        "SiteID": 102,
+        "SiteCode": 40,
+        "SiteName": "ORTANOVA",
+        "Elevation": 80,
+        "altro_nome1": "Ortanova",
+        "altro_nome2": "Ortanova"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7068, 41.3258]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 95,
+      "properties": {
+        "SiteID": 103,
+        "SiteCode": 480,
+        "SiteName": "ORTO_DI_ZOLFO",
+        "Elevation": 854,
+        "altro_nome1": "Orto_di_zolfo",
+        "altro_nome2": "Orto_di_zolfo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.1539, 41.3714]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 96,
+      "properties": {
+        "SiteID": 104,
+        "SiteCode": 23,
+        "SiteName": "OSTUNI",
+        "Elevation": 115,
+        "altro_nome1": "Ostuni",
+        "altro_nome2": "Ostuni"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.5741, 40.7437]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 97,
+      "properties": {
+        "SiteID": 105,
+        "SiteCode": 9,
+        "SiteName": "OTRANTO",
+        "Elevation": 29,
+        "altro_nome1": "Otranto",
+        "altro_nome2": "Otranto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.4885, 40.1438]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 98,
+      "properties": {
+        "SiteID": 106,
+        "SiteCode": 88,
+        "SiteName": "PALAGIANO",
+        "Elevation": 33,
+        "altro_nome1": "Palagiano",
+        "altro_nome2": "Palagiano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.037, 40.571]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 99,
+      "properties": {
+        "SiteID": 107,
+        "SiteCode": 61,
+        "SiteName": "PANNI",
+        "Elevation": 801,
+        "altro_nome1": "Panni",
+        "altro_nome2": "Panni"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.2805, 41.2165]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 100,
+      "properties": {
+        "SiteID": 108,
+        "SiteCode": 496,
+        "SiteName": "PESCOPAGANO",
+        "Elevation": 920,
+        "altro_nome1": "Pescopagano",
+        "altro_nome2": "Pescopagano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3989, 40.8332]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 101,
+      "properties": {
+        "SiteID": 109,
+        "SiteCode": 22,
+        "SiteName": "PIETRAMONTECORVINO",
+        "Elevation": 464,
+        "altro_nome1": "Pietramontecorvino",
+        "altro_nome2": "Pietramontecorvino"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.1289, 41.5434]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 102,
+      "properties": {
+        "SiteID": 110,
+        "SiteCode": 435,
+        "SiteName": "PIETRAMONTECORVINO_-EAAP",
+        "Elevation": 225,
+        "altro_nome1": "Pietramontecorvino_(aqp)",
+        "altro_nome2": "Pietramontecorvino_(aqp)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.239, 41.5244]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 103,
+      "properties": {
+        "SiteID": 111,
+        "SiteCode": 34,
+        "SiteName": "POLIGNANO_A_MARE",
+        "Elevation": 50,
+        "altro_nome1": "Polignano_a_mare",
+        "altro_nome2": "Polignano_a_mare"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.219, 40.9912]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 104,
+      "properties": {
+        "SiteID": 112,
+        "SiteCode": 436,
+        "SiteName": "PRESICCE",
+        "Elevation": 105,
+        "altro_nome1": "Presicce",
+        "altro_nome2": "Presicce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.267, 39.8966]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 105,
+      "properties": {
+        "SiteID": 113,
+        "SiteCode": 65,
+        "SiteName": "QUASANO",
+        "Elevation": 369,
+        "altro_nome1": "Quasano",
+        "altro_nome2": "Quasano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.5758, 40.9657]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 106,
+      "properties": {
+        "SiteID": 114,
+        "SiteCode": 437,
+        "SiteName": "RIPACANDIDA",
+        "Elevation": 658,
+        "altro_nome1": "Ripacandida",
+        "altro_nome2": "Ripacandida"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7358, 40.9161]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 107,
+      "properties": {
+        "SiteID": 115,
+        "SiteCode": 445,
+        "SiteName": "ROCCHETTA_S._ANTONIO",
+        "Elevation": 679,
+        "altro_nome1": "Rocchetta_s._antonio",
+        "altro_nome2": "Rocchetta_sant'antonio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.4655, 41.105]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 108,
+      "properties": {
+        "SiteID": 116,
+        "SiteCode": 481,
+        "SiteName": "ROCCHETTA_S._ANTONIO_(SCALO_)",
+        "Elevation": 220,
+        "altro_nome1": "Rocchetta_s._antonio_(scalo_)",
+        "altro_nome2": "Rocchetta_sant'antonio_(trav._s._venere)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5493, 41.0788]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 109,
+      "properties": {
+        "SiteID": 117,
+        "SiteCode": 2,
+        "SiteName": "RUFFANO",
+        "Elevation": 140,
+        "altro_nome1": "Ruffano",
+        "altro_nome2": "Ruffano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.247, 39.9826]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 110,
+      "properties": {
+        "SiteID": 118,
+        "SiteCode": 10,
+        "SiteName": "RUVO_DI_PUGLIA",
+        "Elevation": 276,
+        "altro_nome1": "Ruvo_di_puglia",
+        "altro_nome2": "Ruvo_di_puglia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.4835, 41.1136]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 111,
+      "properties": {
+        "SiteID": 119,
+        "SiteCode": 497,
+        "SiteName": "SAN_FELE",
+        "Elevation": 902,
+        "altro_nome1": "San_fele",
+        "altro_nome2": "San_fele"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5403, 40.8197]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 112,
+      "properties": {
+        "SiteID": 120,
+        "SiteCode": 446,
+        "SiteName": "SAN_GIORGIO_JONICO",
+        "Elevation": 86,
+        "altro_nome1": "San_giorgio_jonico",
+        "altro_nome2": "San_giorgio_jonico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.3822, 40.4578]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 113,
+      "properties": {
+        "SiteID": 121,
+        "SiteCode": 482,
+        "SiteName": "SAN_GIOVANNI_ROTONDO",
+        "Elevation": 572,
+        "altro_nome1": "San_giovanni_rotondo",
+        "altro_nome2": "San_giovanni_rotondo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7088, 41.7067]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 114,
+      "properties": {
+        "SiteID": 122,
+        "SiteCode": 447,
+        "SiteName": "SAN_MARCO_IN_LAMIS",
+        "Elevation": 564,
+        "altro_nome1": "San_marco_in_lamis",
+        "altro_nome2": "San_marco_in_lamis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.6361, 41.7102]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 115,
+      "properties": {
+        "SiteID": 123,
+        "SiteCode": 5,
+        "SiteName": "SANNICANDRO_GARGANICO",
+        "Elevation": 236,
+        "altro_nome1": "Sannicandro_garganico",
+        "altro_nome2": "Sannicandro_garganico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5625, 41.8371]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 116,
+      "properties": {
+        "SiteID": 124,
+        "SiteCode": 59,
+        "SiteName": "SAN_PANCRAZIO_SALENTINO",
+        "Elevation": 64,
+        "altro_nome1": "San_pancrazio_salentino",
+        "altro_nome2": "San_pancrazio_salentino"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.8398, 40.4185]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 117,
+      "properties": {
+        "SiteID": 125,
+        "SiteCode": 83,
+        "SiteName": "SAN_PAOLO_CIVITATE",
+        "Elevation": 187,
+        "altro_nome1": "San_paolo_civitate",
+        "altro_nome2": "San_paolo_civitate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.2586, 41.7413]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 118,
+      "properties": {
+        "SiteID": 126,
+        "SiteCode": 18,
+        "SiteName": "SAN_PIETRO_VERNOTICO",
+        "Elevation": 49,
+        "altro_nome1": "San_pietro_vernotico",
+        "altro_nome2": "San_pietro_vernotico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0015, 40.4806]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 119,
+      "properties": {
+        "SiteID": 127,
+        "SiteCode": 416,
+        "SiteName": "SAN_SAMUELE_DI_CAFIERO",
+        "Elevation": 46,
+        "altro_nome1": "San_samuele_di_cafiero",
+        "altro_nome2": "San_samuele_di_cafiero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.0592, 41.2691]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 120,
+      "properties": {
+        "SiteID": 128,
+        "SiteCode": 448,
+        "SiteName": "SAN_SEVERO",
+        "Elevation": 97,
+        "altro_nome1": "San_severo",
+        "altro_nome2": "San_severo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3838, 41.6928]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 121,
+      "properties": {
+        "SiteID": 129,
+        "SiteCode": 483,
+        "SiteName": "SANTAGATA_DI_PUGLIA",
+        "Elevation": 710,
+        "altro_nome1": "Santagata_di_puglia",
+        "altro_nome2": "Sant'agata_di_puglia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3813, 41.1492]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 122,
+      "properties": {
+        "SiteID": 130,
+        "SiteCode": 450,
+        "SiteName": "SANTA_MARIA_DI_LEUCA",
+        "Elevation": 26,
+        "altro_nome1": "Santa_maria_di_leuca",
+        "altro_nome2": "Santa_maria_di_leuca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.3549, 39.7986]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 123,
+      "properties": {
+        "SiteID": 131,
+        "SiteCode": 451,
+        "SiteName": "SANT_ANGELO_DEI_LOMBARDI",
+        "Elevation": 875,
+        "altro_nome1": "Sant_angelo_dei_lombardi",
+        "altro_nome2": "Sant'angelo_dei_lombardi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.1689, 40.9173]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 124,
+      "properties": {
+        "SiteID": 132,
+        "SiteCode": 473,
+        "SiteName": "SANTERAMO_IN_COLLE",
+        "Elevation": 489,
+        "altro_nome1": "Santeramo_in_colle",
+        "altro_nome2": "Santeramo_in_colle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.7609, 40.7921]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 125,
+      "properties": {
+        "SiteID": 133,
+        "SiteCode": 449,
+        "SiteName": "SAN_VITO_DEI_NORMANNI",
+        "Elevation": 116,
+        "altro_nome1": "San_vito_dei_normanni",
+        "altro_nome2": "San_vito_dei_normanni"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.7054, 40.6571]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 126,
+      "properties": {
+        "SiteID": 134,
+        "SiteCode": 452,
+        "SiteName": "SAVIGNANO_IRPINO",
+        "Elevation": 718,
+        "altro_nome1": "Savignano_irpino",
+        "altro_nome2": "Savignano_irpino"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.1836, 41.2248]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 127,
+      "properties": {
+        "SiteID": 135,
+        "SiteCode": 453,
+        "SiteName": "SPINAZZOLA",
+        "Elevation": 458,
+        "altro_nome1": "Spinazzola",
+        "altro_nome2": "Spinazzola"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.097, 40.9616]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 128,
+      "properties": {
+        "SiteID": 137,
+        "SiteCode": 454,
+        "SiteName": "TALSANO",
+        "Elevation": 37,
+        "altro_nome1": "Talsano",
+        "altro_nome2": "Talsano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.2728, 40.4102]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 129,
+      "properties": {
+        "SiteID": 138,
+        "SiteCode": 57,
+        "SiteName": "TARANTO",
+        "Elevation": 27,
+        "altro_nome1": "Taranto",
+        "altro_nome2": "Taranto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.2504, 40.4643]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 130,
+      "properties": {
+        "SiteID": 139,
+        "SiteCode": 14,
+        "SiteName": "TAVIANO",
+        "Elevation": 72,
+        "altro_nome1": "Taviano",
+        "altro_nome2": "Taviano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0888, 39.9818]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 131,
+      "properties": {
+        "SiteID": 140,
+        "SiteCode": 455,
+        "SiteName": "TEORA",
+        "Elevation": 687,
+        "altro_nome1": "Teora",
+        "altro_nome2": "Teora"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.2425, 40.8455]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 132,
+      "properties": {
+        "SiteID": 141,
+        "SiteCode": 484,
+        "SiteName": "TERTIVERI",
+        "Elevation": 364,
+        "altro_nome1": "Tertiveri",
+        "altro_nome2": "Tertiveri"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.206, 41.4328]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 133,
+      "properties": {
+        "SiteID": 142,
+        "SiteCode": 485,
+        "SiteName": "TORREMAGGIORE",
+        "Elevation": 184,
+        "altro_nome1": "Torremaggiore",
+        "altro_nome2": "Torremaggiore"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.2921, 41.6894]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 134,
+      "properties": {
+        "SiteID": 143,
+        "SiteCode": 38,
+        "SiteName": "TROIA",
+        "Elevation": 448,
+        "altro_nome1": "Troia",
+        "altro_nome2": "Troia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3096, 41.3615]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 135,
+      "properties": {
+        "SiteID": 144,
+        "SiteCode": 39,
+        "SiteName": "TURI",
+        "Elevation": 260,
+        "altro_nome1": "Turi",
+        "altro_nome2": "Turi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.0224, 40.9205]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 136,
+      "properties": {
+        "SiteID": 145,
+        "SiteCode": 58,
+        "SiteName": "VENOSA",
+        "Elevation": 426,
+        "altro_nome1": "Venosa",
+        "altro_nome2": "Venosa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.8106, 40.9642]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 137,
+      "properties": {
+        "SiteID": 146,
+        "SiteCode": 486,
+        "SiteName": "VICO_GARGANICO",
+        "Elevation": 450,
+        "altro_nome1": "Vico_garganico",
+        "altro_nome2": "Vico_del_gargano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.9583, 41.8912]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 138,
+      "properties": {
+        "SiteID": 147,
+        "SiteCode": 459,
+        "SiteName": "VIESTE",
+        "Elevation": 53,
+        "altro_nome1": "Vieste",
+        "altro_nome2": "Vieste"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.1752, 41.88]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 139,
+      "properties": {
+        "SiteID": 148,
+        "SiteCode": 494,
+        "SiteName": "VIGNACASTRISI",
+        "Elevation": 99,
+        "altro_nome1": "Vignacastrisi",
+        "altro_nome2": "Vignacastrisi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.4088, 40.0118]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 140,
+      "properties": {
+        "SiteID": 149,
+        "SiteCode": 86,
+        "SiteName": "VOLTURARA_APPULA",
+        "Elevation": 604,
+        "altro_nome1": "Volturara_appula",
+        "altro_nome2": "Volturara_appula"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.0634, 41.5021]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 141,
+      "properties": {
+        "SiteID": 150,
+        "SiteCode": 487,
+        "SiteName": "VOLTURINO",
+        "Elevation": 713,
+        "altro_nome1": "Volturino",
+        "altro_nome2": "Volturino"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.1274, 41.4772]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 142,
+      "properties": {
+        "SiteID": 159,
+        "SiteCode": 60,
+        "SiteName": "CELLINO_SAN_MARCO",
+        "Elevation": 65,
+        "altro_nome1": "Cellino_san_marco",
+        "altro_nome2": "Cellino_san_marco"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.9667, 40.4667]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 143,
+      "properties": {
+        "SiteID": 163,
+        "SiteCode": 97,
+        "SiteName": "GRAVINA_DI_PUGLIA",
+        "Elevation": 401,
+        "altro_nome1": "Gravina_di_puglia",
+        "altro_nome2": "Gravina_in_puglia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.4139, 40.8252]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 144,
+      "properties": {
+        "SiteID": 165,
+        "SiteCode": 98,
+        "SiteName": "LATERZA",
+        "Elevation": 347,
+        "altro_nome1": "Laterza",
+        "altro_nome2": "Laterza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.8, 40.6167]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 145,
+      "properties": {
+        "SiteID": 169,
+        "SiteCode": 96,
+        "SiteName": "MESAGNE",
+        "Elevation": 72,
+        "altro_nome1": "Mesagne",
+        "altro_nome2": "Mesagne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.7833, 40.5591]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 146,
+      "properties": {
+        "SiteID": 171,
+        "SiteCode": 95,
+        "SiteName": "MONOPOLI",
+        "Elevation": 14,
+        "altro_nome1": "Monopoli",
+        "altro_nome2": "Monopoli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.3122, 40.9389]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 147,
+      "properties": {
+        "SiteID": 176,
+        "SiteCode": 99,
+        "SiteName": "PALAGIANELLO",
+        "Elevation": 152,
+        "altro_nome1": "Palagianello",
+        "altro_nome2": "Palagianello"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.9776, 40.6115]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 148,
+      "properties": {
+        "SiteID": 179,
+        "SiteCode": 7,
+        "SiteName": "POGGIO_IMPERIALE",
+        "Elevation": 73,
+        "altro_nome1": "Poggio_imperiale",
+        "altro_nome2": "Poggio_imperiale"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.3652, 41.8239]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 149,
+      "properties": {
+        "SiteID": 190,
+        "SiteCode": 901,
+        "SiteName": "ISOLE_TREMITI",
+        "Elevation": 35,
+        "altro_nome1": "Isole_tremiti",
+        "altro_nome2": "Isole_tremiti_(san_nicola)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.5115, 42.1252]
+      }
+    }
+  ]
+} 
