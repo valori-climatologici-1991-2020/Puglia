@@ -36,3 +36,26 @@ Sintetizzando:
 - per il periodo 1995 - 2012 si possono usare i dati del Centro Funzionale;
 - dal 2013 in poi si possono utilizzare i dati estratti dagli Annali.
 
+
+### Stato dei dati, gennaio 2021
+
+- Sistemate l'anagrafica delle stazioni. Le coordinate, le quote e i codici delle stazioni sono state ricavate dal sito: [http://93.57.89.4:8081/temporeale/meteo/stazioni]
+
+- Le seguenti stazioni sono state eliminate dal dataset dei dati:
+
+| SiteID | Nome |
+|--------|------|
+| 63     | Lacedonia |   
+| 78     | MASSERIA_BRELA_II_POD |
+| 79     | MASSERIA_CHIANCARELLO |
+| 80     | Masseria cicchetto |
+| 83     | MASSERIA_POSTA_DELLE_CAPRE |
+
+Si tratta di stazioni che comparivano nelle vecchie forniture dati o su HisCentral (?) ma di cui non abbiamo coordinate e che non compaiono nella pagina web 
+dell'anagrafica delle stazioni della Puglia del Centro Funzionale. In ogni caso si tratta di serie che sono interrotte.
+
+- I dati 2020 e 2014 sono stati acquisiti dall'archivio del dati giornalieri della Puglia. I restanti dati sono stati ricavati rielaborando gli Annali e sulla base dei dati forniti dal Centro Funzionale nel 2016.
+
+- Per 4 stazioni i dati dal 2007 al 2020 sono stati ricavati dall'archivio dei dati giornalieri del Centro Funzionale per colmare i buchi dati dati.
+
+
