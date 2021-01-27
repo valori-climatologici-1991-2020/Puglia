@@ -23,6 +23,7 @@ SiteID;SiteCode;SiteName;Elevation;Longitude;Latitude;altro_nome1;altro_nome2
 22;6;BRINDISI;22;17.91722;40.63389;Brindisi;Brindisi
 23;407;CAGNANO_VARANO;181;15.80028;41.83361;Cagnano_varano;Cagnano_varano
 24;408;CALITRI;670;15.41694;40.88417;Calitri;Calitri
+25;82;Can.asso;88;18.0375;40.18417;Can.asso;Can.asso
 26;477;CANDELA;475;15.51694;41.13472;Candela;Candela
 27;409;CANOSA_DI_PUGLIA;116;16.10056;41.21694;Canosa_di_puglia;Canosa_di_puglia
 28;84;CARLANTINO;640;14.95056;41.58333;Carlantino;Carlantino
@@ -74,6 +75,7 @@ SiteID;SiteCode;SiteName;Elevation;Longitude;Latitude;altro_nome1;altro_nome2
 75;425;MANFREDONIA-BONIFICA_SIPONTINA;2;15.88;41.58306;Manfredonia-bonifica_sipontina;Manfredonia_(bonifica_sipontina)
 76;426;MARTINA_FRANCA;439;17.33389;40.68389;Martina_franca;Martina_franca
 77;41;MASSAFRA;113;17.10056;40.58361;Massafra;Massafra
+79;NA;MASSERIA_CHIANCARELLO;459;17.13988197825074;40.6989720535;MASSERIA_CHIANCARELLO;MASSERIA_CHIANCARELLO
 81;87;MASSERIA_MODESTI;501;16.40139;40.9675;Masseria_modesti;Masseria_modesti
 82;427;MASSERIA_MONTERUGA;92;17.81722;40.33389;Masseria_monteruga;Masseria_monteruga
 84;428;MASSERIA_S._CHIARA;10;16.13333;41.33361;Masseria_s._chiara;Masseria_santa_chiara
@@ -85,6 +87,7 @@ SiteID;SiteCode;SiteName;Elevation;Longitude;Latitude;altro_nome1;altro_nome2
 90;30;MONTELEONE_DI_PUGLIA;828;15.25028;41.15056;Monteleone_di_puglia;Monteleone_di_puglia
 91;432;MONTEMILONE;350;15.95083;41.01722;Montemilone;Montemilone
 92;48;MONTE_S._ANGELO;808;15.95056;41.70028;Monte_s._angelo;Monte_sant'angelo
+93;431;NA;1264;15.61722;40.95;Monte_vulture;NA
 94;13;MONTICCHIO_BAGNI;713;15.6;40.93333;Monticchio_bagni;Monticchio_bagni
 95;433;MONTURSI;387;16.88278;40.75972;Montursi;Montursi_(aqp)
 96;500;MOTTOLA;334;17.03389;40.61806;Mottola;Mottola
@@ -145,7 +148,6 @@ SiteID;SiteCode;SiteName;Elevation;Longitude;Latitude;altro_nome1;altro_nome2
 152;501;NA;166;18.31722;39.88417;Alessano;NA
 153;116;NA;NA;15.61972;41.54778;Arpinova;NA
 156;810;NA;NA;16.16278;40.73861;Bradano_p.te_colonna_(basil);NA
-157;82;NA;88;18.0375;40.18417;Can.asso;NA
 158;110;NA;150;15.85528;41.84444;Carpino;Carpino
 159;60;CELLINO_SAN_MARCO;61;17.96667;40.46694;Cellino_san_marco;Cellino_san_marco
 160;102;NA;200;15.99139;41.09833;Diga_locone;Diga_locone
@@ -160,7 +162,6 @@ SiteID;SiteCode;SiteName;Elevation;Longitude;Latitude;altro_nome1;altro_nome2
 169;96;MESAGNE;72;17.78389;40.55028;Mesagne;Mesagne
 170;124;NA;NA;16.59667;41.19278;Molfetta;NA
 171;95;MONOPOLI;14;17.30056;40.93361;Monopoli;Monopoli
-172;431;NA;1264;15.61722;40.95;Monte_vulture;NA
 173;115;NA;NA;17.33833;40.56278;Montemesola;NA
 174;808;NA;NA;16.70111;40.55861;Montescaglioso_(basil);NA
 175;806;NA;NA;15.98528;40.76361;Oppido_lucano_(basil);NA
